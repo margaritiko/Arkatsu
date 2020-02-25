@@ -41,7 +41,8 @@ final class AchievementView: UICollectionViewCell {
   }
 
   @objc func labelTapped(_ sender: UITapGestureRecognizer) {
-    logoImageView.image = logoImageView.image!.grayscaled
+    CoreDataManager.shared.toggleAchievement(withName: model.name)
+    recolor()
   }
   
   func configure(withModel model: AchievementModel) { // }, layout: CompanyViewLayout) {
@@ -59,6 +60,8 @@ final class AchievementView: UICollectionViewCell {
     backView.addSubview(achievementName)
     
     layoutSubviews()
+
+    recolor()
   }
   
   override func layoutSubviews() {
@@ -79,6 +82,13 @@ final class AchievementView: UICollectionViewCell {
     )
   }
 
+  private func recolor() {
+    if CoreDataManager.shared.isAchievementDone(withName: model.name) {
+      logoImageView.image = model.logo
+    } else {
+      logoImageView.image = model.logo.grayscaled
+    }
+  }
 }
 
 private enum Specs {

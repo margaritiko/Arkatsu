@@ -13,11 +13,11 @@ class ArkatsuInfoViewController: UIViewController {
   let animatedArkatsu: UIImageView
   let activityView: ActivityView
   let collectionView: UICollectionView
-  let dailyBonusLabel: UILabel
+  let taskLabel: UILabel
 
   init() {
-    dailyBonusLabel = UILabel(frame: .zero)
-    dailyBonusLabel.textAlignment = .center
+    taskLabel = UILabel(frame: .zero)
+    taskLabel.textAlignment = .center
 
     let collectionViewLayout = UICollectionViewFlowLayout()
     collectionViewLayout.scrollDirection = .horizontal
@@ -33,13 +33,13 @@ class ArkatsuInfoViewController: UIViewController {
     collectionView.dataSource = self
     collectionView.delegate = self
     collectionView.register(
-      DailyBonusCollectionViewCell.self,
-      forCellWithReuseIdentifier: dailyBonusIdentifier
+      TaskCell.self,
+      forCellWithReuseIdentifier: taskCellIdentifier
     )
 
     view.addSubview(animatedArkatsu)
     view.addSubview(activityView)
-    view.addSubview(dailyBonusLabel)
+    view.addSubview(taskLabel)
     view.addSubview(collectionView)
 
     tabBarItem = UITabBarItem(
@@ -80,15 +80,15 @@ class ArkatsuInfoViewController: UIViewController {
       height: imageSide
     )
 
-    dailyBonusLabel.frame = CGRect(
-      x: Specs.dailyBonusLabelInsets.left,
-      y: Specs.imageInsets.top + activityView.frame.height + Specs.dailyBonusLabelInsets.top,
-      width: UIScreen.main.bounds.width - Specs.dailyBonusLabelInsets.horizontalSum,
-      height: Specs.dailyBonusLabelHeight
+    taskLabel.frame = CGRect(
+      x: Specs.taskLabelInsets.left,
+      y: Specs.imageInsets.top + activityView.frame.height + Specs.taskLabelInsets.top,
+      width: UIScreen.main.bounds.width - Specs.taskLabelInsets.horizontalSum,
+      height: Specs.taskLabelHeight
     )
 
-    dailyBonusLabel.attributedText = NSAttributedString(
-      string: dailyBonusLabelContent, attributes: [
+    taskLabel.attributedText = NSAttributedString(
+      string: addTaskLabelContent, attributes: [
         NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: Specs.fontSize),
         NSAttributedString.Key.foregroundColor: UIColor.black,
       ]
@@ -97,76 +97,64 @@ class ArkatsuInfoViewController: UIViewController {
     let tabBarHeight = AppDelegate.tabBarHeight ?? 0
     collectionView.frame = CGRect(
       x: Specs.collectionViewInsets.left,
-      y: dailyBonusLabel.frame.maxY,
+      y: taskLabel.frame.maxY,
       width: view.frame.width - Specs.collectionViewInsets.horizontalSum,
-      height: view.frame.height - tabBarHeight - dailyBonusLabel.frame.maxY - Specs.collectionViewInsets.verticalSum
+      height: view.frame.height - tabBarHeight - taskLabel.frame.maxY - Specs.collectionViewInsets.verticalSum
     )
   }
 }
 
-private let fakeModels: [DailyBonusModel] = [
-  DailyBonusModel(
-    description: "This week will be the final of the ICPC programming competition. Become involved in this event!",
-    title: "ICPC",
-    category: "Uni",
-    bonusLogo: UIImage(named: "ICPC")!
-  ),
-
-  DailyBonusModel(
-    description: "Jeremy is inviting everyone to play football. We are gathering today at 17:00 at the third field. Jeremy is inviting everyone to play football. We are gathering today at 17:00 at the third field.",
-    title: "Football",
-    category: "Entertainment",
-    bonusLogo: UIImage(named: "Football")!
-  ),
-
-  DailyBonusModel(
-    description: "Pasha collects a company to play the mafia. We are going to 103 rooms at 10 pm.",
-    title: "Board games",
-    category: "Board games",
-    bonusLogo: UIImage(named: "Board_games")!
-  )
+private let fakeModels: [TaskModel] = [
+  TaskModel(title: "Football with BSE184", details: "Play football with group", weight: 20, status: .sport),
+  TaskModel(title: "Discrete Math HW Do the first discrete math homework due to get high score", details: "Do the first discrete math homework due to get high score Do the first discrete math homework due to get high score", weight: 50, status: .education)
 ]
 
 extension ArkatsuInfoViewController: UICollectionViewDelegateFlowLayout {
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-    let layout = DailyBonusCollectionViewCell.layoutForModel(
-      fakeModels[indexPath.row],
-      width: collectionView.frame.width,
-      height: collectionView.frame.height * 0.95
-    )
 
     return CGSize(
-      width: layout.totalWidth,
-      height: collectionView.frame.height * 0.95
+      width: 360,
+      height: collectionView.frame.height
     )
   }
 }
 
 extension ArkatsuInfoViewController: UICollectionViewDataSource {
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return fakeModels.count
+    return fakeModels.count + 1
   }
 
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: dailyBonusIdentifier, for: indexPath) as! DailyBonusCollectionViewCell
+    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: taskCellIdentifier, for: indexPath) as! TaskCell
 
-    cell.configure(with: fakeModels[indexPath.row])
+    if indexPath.row == 0 {
+      cell.configureAsTaskFactory()
+    } else {
+      cell.configure(with: fakeModels[indexPath.row - 1], delegate: self)
+    }
 
     return cell
   }
 
 }
 
-let dailyBonusIdentifier = "DailyBonusCell"
-let dailyBonusLabelContent = "Daily Bonus"
+extension ArkatsuInfoViewController: TaskActionsDelegate {
+  func showActions(forModel model: TaskModel) {
+    let actionsViewController = TaskActionViewController(model: model)
+    present(actionsViewController, animated: true, completion: nil)
+  }
+}
+
+let taskCellIdentifier = "TaskCell"
+let addTaskLabelContent = "Your tasks"
 
 private enum Specs {
   static let cellRatio = CGFloat(0.7)
   static let imageRatioToParent = CGFloat(0.38)
   static let imageInsets = UIEdgeInsets(top: 60, left: 24, bottom: 8, right: 24)
   static let collectionViewInsets = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
-  static let dailyBonusLabelInsets = UIEdgeInsets(uniform: 64)
-  static let dailyBonusLabelHeight = CGFloat(32)
+  static let taskLabelInsets = UIEdgeInsets(uniform: 64)
+  static let taskLabelHeight = CGFloat(32)
   static let bonusCardWidth = CGFloat(300)
   static let collectionViewOffset = CGFloat(16)
   static let fontSize = CGFloat(30)

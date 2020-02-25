@@ -83,14 +83,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
 
   func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
       if let name = anchor.name, name.hasPrefix("panda") {
-          // Switch here between two models
-          if nextRed {
-              node.addChildNode(loadRedPandaModel())
-          } else {
-              node.addChildNode(loadBluePandaModel())
-          }
-
-          nextRed = !nextRed
+          node.addChildNode(loadRedPandaModel())
       }
   }
 

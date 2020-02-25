@@ -18,6 +18,19 @@
 		5C167C81234A2DEA00BA26AD /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C167C80234A2DEA00BA26AD /* ProgressView.swift */; };
 		5C167C83234A2FEE00BA26AD /* CardProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C167C82234A2FEE00BA26AD /* CardProgress.swift */; };
 		5C79E6552405971E007270F8 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C79E6542405971E007270F8 /* UIImageExtension.swift */; };
+		5C79E65824059817007270F8 /* ArkatsuDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C79E65624059817007270F8 /* ArkatsuDataModel.xcdatamodeld */; };
+		5C79E65B2405982F007270F8 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C79E65A2405982F007270F8 /* CoreDataManager.swift */; };
+		5C79E65E24059897007270F8 /* Achievement+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C79E65C24059897007270F8 /* Achievement+CoreDataClass.swift */; };
+		5C79E65F24059897007270F8 /* Achievement+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C79E65D24059897007270F8 /* Achievement+CoreDataProperties.swift */; };
+		5C79E66524059D2F007270F8 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C79E66424059D2F007270F8 /* TaskCell.swift */; };
+		5C79E66724059D82007270F8 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C79E66624059D82007270F8 /* TaskView.swift */; };
+		5C79E66C24059E18007270F8 /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C79E66A24059E18007270F8 /* Task+CoreDataClass.swift */; };
+		5C79E66D24059E18007270F8 /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C79E66B24059E18007270F8 /* Task+CoreDataProperties.swift */; };
+		5C79E66F24059E91007270F8 /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C79E66E24059E91007270F8 /* ColorScheme.swift */; };
+		5C79E67124059EAF007270F8 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C79E67024059EAF007270F8 /* TaskModel.swift */; };
+		5C79E67324059EDE007270F8 /* TaskStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C79E67224059EDE007270F8 /* TaskStatus.swift */; };
+		5C79E6752405AA10007270F8 /* TaskActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C79E6742405AA10007270F8 /* TaskActionViewController.swift */; };
+		5C79E6772405AD64007270F8 /* TaskActionsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C79E6762405AD64007270F8 /* TaskActionsDelegate.swift */; };
 		5CA041C1234A7AA6009B1DD9 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA041C0234A7AA6009B1DD9 /* UIColorExtension.swift */; };
 		5CA041C3234AA0A3009B1DD9 /* UIEdgeInsetsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA041C2234AA0A3009B1DD9 /* UIEdgeInsetsExtension.swift */; };
 		5CA041C5234AA1CF009B1DD9 /* CardColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA041C4234AA1CF009B1DD9 /* CardColorScheme.swift */; };
@@ -46,10 +59,6 @@
 		5CD6DBBC234DD8D300D39CEB /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6DBBB234DD8D300D39CEB /* MainTabViewController.swift */; };
 		5CD6DBBF234DE04300D39CEB /* ArkatsuInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6DBBE234DE04300D39CEB /* ArkatsuInfoViewController.swift */; };
 		5CD6DBC2234DE38600D39CEB /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6DBC1234DE38600D39CEB /* ActivityView.swift */; };
-		5CD6DBC4234E886A00D39CEB /* DailyBonusDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6DBC3234E886A00D39CEB /* DailyBonusDescriptionView.swift */; };
-		5CD6DBC6234F012200D39CEB /* DailyBonusCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6DBC5234F012200D39CEB /* DailyBonusCollectionViewCell.swift */; };
-		5CD6DBC9234F01A800D39CEB /* DailyBonusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6DBC8234F01A800D39CEB /* DailyBonusModel.swift */; };
-		5CD6DBCC2351DC2E00D39CEB /* DailyBonusDescriptionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6DBCB2351DC2E00D39CEB /* DailyBonusDescriptionLayout.swift */; };
 		5CE4BF86232E938600A5E7B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE4BF85232E938600A5E7B8 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +80,19 @@
 		5C167C80234A2DEA00BA26AD /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		5C167C82234A2FEE00BA26AD /* CardProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardProgress.swift; sourceTree = "<group>"; };
 		5C79E6542405971E007270F8 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		5C79E65724059817007270F8 /* ArkatsuDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ArkatsuDataModel.xcdatamodel; sourceTree = "<group>"; };
+		5C79E65A2405982F007270F8 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		5C79E65C24059897007270F8 /* Achievement+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Achievement+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5C79E65D24059897007270F8 /* Achievement+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Achievement+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5C79E66424059D2F007270F8 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		5C79E66624059D82007270F8 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		5C79E66A24059E18007270F8 /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5C79E66B24059E18007270F8 /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5C79E66E24059E91007270F8 /* ColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
+		5C79E67024059EAF007270F8 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		5C79E67224059EDE007270F8 /* TaskStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStatus.swift; sourceTree = "<group>"; };
+		5C79E6742405AA10007270F8 /* TaskActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskActionViewController.swift; sourceTree = "<group>"; };
+		5C79E6762405AD64007270F8 /* TaskActionsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskActionsDelegate.swift; sourceTree = "<group>"; };
 		5CA041C0234A7AA6009B1DD9 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		5CA041C2234AA0A3009B1DD9 /* UIEdgeInsetsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsetsExtension.swift; sourceTree = "<group>"; };
 		5CA041C4234AA1CF009B1DD9 /* CardColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardColorScheme.swift; sourceTree = "<group>"; };
@@ -100,10 +122,6 @@
 		5CD6DBBB234DD8D300D39CEB /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		5CD6DBBE234DE04300D39CEB /* ArkatsuInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArkatsuInfoViewController.swift; sourceTree = "<group>"; };
 		5CD6DBC1234DE38600D39CEB /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
-		5CD6DBC3234E886A00D39CEB /* DailyBonusDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBonusDescriptionView.swift; sourceTree = "<group>"; };
-		5CD6DBC5234F012200D39CEB /* DailyBonusCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBonusCollectionViewCell.swift; sourceTree = "<group>"; };
-		5CD6DBC8234F01A800D39CEB /* DailyBonusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBonusModel.swift; sourceTree = "<group>"; };
-		5CD6DBCB2351DC2E00D39CEB /* DailyBonusDescriptionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBonusDescriptionLayout.swift; sourceTree = "<group>"; };
 		5CE4BF85232E938600A5E7B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C42A71BC1E9C0AF200944367 /* FocusSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusSquare.swift; sourceTree = "<group>"; };
 		C812D8671F47628300344E73 /* ThresholdPanGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThresholdPanGesture.swift; sourceTree = "<group>"; };
@@ -154,6 +172,7 @@
 				3929C48F1E89EC2C00E00B60 /* Main.storyboard */,
 				39D8DC1A1E8ADAE600386B05 /* LaunchScreen.storyboard */,
 				488A9F472338E73100BBD8A5 /* ARViewController.swift */,
+				5C79E65624059817007270F8 /* ArkatsuDataModel.xcdatamodeld */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -181,6 +200,7 @@
 		3929C48A1E89EC2C00E00B60 /* Arkatsu  */ = {
 			isa = PBXGroup;
 			children = (
+				5C79E6592405981E007270F8 /* core data logic */,
 				5CE4BF85232E938600A5E7B8 /* AppDelegate.swift */,
 				5CA8035E2352FBA200A633EF /* companies scene */,
 				5CA8035423529B0500A633EF /* multipeer ar controller */,
@@ -240,8 +260,21 @@
 			isa = PBXGroup;
 			children = (
 				113B64D01ECA81CA0071CBD1 /* focus square */,
+				5C79E66E24059E91007270F8 /* ColorScheme.swift */,
 			);
 			path = ui;
+			sourceTree = "<group>";
+		};
+		5C79E6592405981E007270F8 /* core data logic */ = {
+			isa = PBXGroup;
+			children = (
+				5C79E65D24059897007270F8 /* Achievement+CoreDataProperties.swift */,
+				5C79E66A24059E18007270F8 /* Task+CoreDataClass.swift */,
+				5C79E66B24059E18007270F8 /* Task+CoreDataProperties.swift */,
+				5C79E65C24059897007270F8 /* Achievement+CoreDataClass.swift */,
+				5C79E65A2405982F007270F8 /* CoreDataManager.swift */,
+			);
+			path = "core data logic";
 			sourceTree = "<group>";
 		};
 		5CA041BF234A7A90009B1DD9 /* extensions */ = {
@@ -351,6 +384,7 @@
 				5CD6DBC7234F019700D39CEB /* models */,
 				5CD6DBC0234DE37700D39CEB /* views */,
 				5CD6DBBE234DE04300D39CEB /* ArkatsuInfoViewController.swift */,
+				5C79E6742405AA10007270F8 /* TaskActionViewController.swift */,
 			);
 			path = "all info view controller";
 			sourceTree = "<group>";
@@ -359,8 +393,8 @@
 			isa = PBXGroup;
 			children = (
 				5CD6DBC1234DE38600D39CEB /* ActivityView.swift */,
-				5CD6DBC3234E886A00D39CEB /* DailyBonusDescriptionView.swift */,
-				5CD6DBC5234F012200D39CEB /* DailyBonusCollectionViewCell.swift */,
+				5C79E66424059D2F007270F8 /* TaskCell.swift */,
+				5C79E66624059D82007270F8 /* TaskView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -368,18 +402,11 @@
 		5CD6DBC7234F019700D39CEB /* models */ = {
 			isa = PBXGroup;
 			children = (
-				5CD6DBCA2351DC1700D39CEB /* layout */,
-				5CD6DBC8234F01A800D39CEB /* DailyBonusModel.swift */,
+				5C79E67024059EAF007270F8 /* TaskModel.swift */,
+				5C79E67224059EDE007270F8 /* TaskStatus.swift */,
+				5C79E6762405AD64007270F8 /* TaskActionsDelegate.swift */,
 			);
 			path = models;
-			sourceTree = "<group>";
-		};
-		5CD6DBCA2351DC1700D39CEB /* layout */ = {
-			isa = PBXGroup;
-			children = (
-				5CD6DBCB2351DC2E00D39CEB /* DailyBonusDescriptionLayout.swift */,
-			);
-			path = layout;
 			sourceTree = "<group>";
 		};
 		80F1FE8BA9EEDAC73385CB18 /* Pods */ = {
@@ -469,21 +496,26 @@
 				5CA041CD234AB884009B1DD9 /* CompanyProgressInfo.swift in Sources */,
 				5CA8035A23529BC200A633EF /* RoundedButton.swift in Sources */,
 				5CA041DB234BD9EA009B1DD9 /* UserAggregatedInfoModel.swift in Sources */,
+				5C79E65E24059897007270F8 /* Achievement+CoreDataClass.swift in Sources */,
+				5C79E65824059817007270F8 /* ArkatsuDataModel.xcdatamodeld in Sources */,
 				5CA041D1234ABD6A009B1DD9 /* CompanyLabel.swift in Sources */,
 				5C167C7D234A2D1D00BA26AD /* ProgressSceneViewController.swift in Sources */,
 				5CA041C3234AA0A3009B1DD9 /* UIEdgeInsetsExtension.swift in Sources */,
 				5CA8036F2352FBA200A633EF /* IGoalProgress.swift in Sources */,
+				5C79E66C24059E18007270F8 /* Task+CoreDataClass.swift in Sources */,
 				5C167C7F234A2D9A00BA26AD /* CategoryCardView.swift in Sources */,
 				5CA8035C23529BDB00A633EF /* Utilities.swift in Sources */,
+				5C79E65B2405982F007270F8 /* CoreDataManager.swift in Sources */,
 				5CA8036C2352FBA200A633EF /* AchievementsSceneViewController.swift in Sources */,
 				5C167C83234A2FEE00BA26AD /* CardProgress.swift in Sources */,
-				5CD6DBC4234E886A00D39CEB /* DailyBonusDescriptionView.swift in Sources */,
 				5CA803712352FBA200A633EF /* GoalModel.swift in Sources */,
 				5CA8035823529BAA00A633EF /* MultipeerSession.swift in Sources */,
 				5CD6DBBC234DD8D300D39CEB /* MainTabViewController.swift in Sources */,
 				5CA041C5234AA1CF009B1DD9 /* CardColorScheme.swift in Sources */,
+				5C79E66D24059E18007270F8 /* Task+CoreDataProperties.swift in Sources */,
 				5C167C81234A2DEA00BA26AD /* ProgressView.swift in Sources */,
 				5C167C75234A2B8700BA26AD /* CategoryCardModel.swift in Sources */,
+				5C79E65F24059897007270F8 /* Achievement+CoreDataProperties.swift in Sources */,
 				5CA041DE234BDD64009B1DD9 /* UserStatus.swift in Sources */,
 				5CA041D3234B6D3D009B1DD9 /* StringExtension.swift in Sources */,
 				5CA8035623529B8E00A633EF /* ViewController.swift in Sources */,
@@ -491,17 +523,21 @@
 				5CA803742352FBA200A633EF /* AchievementView.swift in Sources */,
 				5CA803732352FBA200A633EF /* CategoryView.swift in Sources */,
 				5CA041CF234AB93A009B1DD9 /* CompanyProgressColorScheme.swift in Sources */,
+				5C79E67324059EDE007270F8 /* TaskStatus.swift in Sources */,
 				5CA041C1234A7AA6009B1DD9 /* UIColorExtension.swift in Sources */,
-				5CD6DBC6234F012200D39CEB /* DailyBonusCollectionViewCell.swift in Sources */,
+				5C79E66524059D2F007270F8 /* TaskCell.swift in Sources */,
 				5CA8036E2352FBA200A633EF /* AchievementModel.swift in Sources */,
 				5CA803532352825600A633EF /* UITabBarExtension.swift in Sources */,
 				488A9F482338E73100BBD8A5 /* ARViewController.swift in Sources */,
 				5CD6DBC2234DE38600D39CEB /* ActivityView.swift in Sources */,
+				5C79E66724059D82007270F8 /* TaskView.swift in Sources */,
 				5CA041C7234AAED9009B1DD9 /* CategoryCardViewLayout.swift in Sources */,
+				5C79E6752405AA10007270F8 /* TaskActionViewController.swift in Sources */,
+				5C79E6772405AD64007270F8 /* TaskActionsDelegate.swift in Sources */,
+				5C79E67124059EAF007270F8 /* TaskModel.swift in Sources */,
 				5CE4BF86232E938600A5E7B8 /* AppDelegate.swift in Sources */,
-				5CD6DBCC2351DC2E00D39CEB /* DailyBonusDescriptionLayout.swift in Sources */,
 				5CA8036D2352FBA200A633EF /* CategoryModel.swift in Sources */,
-				5CD6DBC9234F01A800D39CEB /* DailyBonusModel.swift in Sources */,
+				5C79E66F24059E91007270F8 /* ColorScheme.swift in Sources */,
 				5CA803752352FBA200A633EF /* CompanyGoalsViewController.swift in Sources */,
 				5CD6DBBF234DE04300D39CEB /* ArkatsuInfoViewController.swift in Sources */,
 			);
@@ -702,6 +738,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5C79E65624059817007270F8 /* ArkatsuDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5C79E65724059817007270F8 /* ArkatsuDataModel.xcdatamodel */,
+			);
+			currentVersion = 5C79E65724059817007270F8 /* ArkatsuDataModel.xcdatamodel */;
+			path = ArkatsuDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3929C4801E89EC2C00E00B60 /* Project object */;
 }
