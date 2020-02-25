@@ -17,6 +17,7 @@
 		5C167C7F234A2D9A00BA26AD /* CategoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C167C7E234A2D9A00BA26AD /* CategoryCardView.swift */; };
 		5C167C81234A2DEA00BA26AD /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C167C80234A2DEA00BA26AD /* ProgressView.swift */; };
 		5C167C83234A2FEE00BA26AD /* CardProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C167C82234A2FEE00BA26AD /* CardProgress.swift */; };
+		5C79E6552405971E007270F8 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C79E6542405971E007270F8 /* UIImageExtension.swift */; };
 		5CA041C1234A7AA6009B1DD9 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA041C0234A7AA6009B1DD9 /* UIColorExtension.swift */; };
 		5CA041C3234AA0A3009B1DD9 /* UIEdgeInsetsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA041C2234AA0A3009B1DD9 /* UIEdgeInsetsExtension.swift */; };
 		5CA041C5234AA1CF009B1DD9 /* CardColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA041C4234AA1CF009B1DD9 /* CardColorScheme.swift */; };
@@ -33,14 +34,14 @@
 		5CA8035823529BAA00A633EF /* MultipeerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA8035723529BAA00A633EF /* MultipeerSession.swift */; };
 		5CA8035A23529BC200A633EF /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA8035923529BC200A633EF /* RoundedButton.swift */; };
 		5CA8035C23529BDB00A633EF /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA8035B23529BDB00A633EF /* Utilities.swift */; };
-		5CA8036C2352FBA200A633EF /* CompaniesSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA8035F2352FBA200A633EF /* CompaniesSceneViewController.swift */; };
+		5CA8036C2352FBA200A633EF /* AchievementsSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA8035F2352FBA200A633EF /* AchievementsSceneViewController.swift */; };
 		5CA8036D2352FBA200A633EF /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA803612352FBA200A633EF /* CategoryModel.swift */; };
-		5CA8036E2352FBA200A633EF /* CompanyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA803622352FBA200A633EF /* CompanyModel.swift */; };
+		5CA8036E2352FBA200A633EF /* AchievementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA803622352FBA200A633EF /* AchievementModel.swift */; };
 		5CA8036F2352FBA200A633EF /* IGoalProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA803642352FBA200A633EF /* IGoalProgress.swift */; };
 		5CA803702352FBA200A633EF /* CategoryLabelDelegateDataSourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA803652352FBA200A633EF /* CategoryLabelDelegateDataSourse.swift */; };
 		5CA803712352FBA200A633EF /* GoalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA803662352FBA200A633EF /* GoalModel.swift */; };
 		5CA803732352FBA200A633EF /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA803692352FBA200A633EF /* CategoryView.swift */; };
-		5CA803742352FBA200A633EF /* CompanyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA8036A2352FBA200A633EF /* CompanyView.swift */; };
+		5CA803742352FBA200A633EF /* AchievementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA8036A2352FBA200A633EF /* AchievementView.swift */; };
 		5CA803752352FBA200A633EF /* CompanyGoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA8036B2352FBA200A633EF /* CompanyGoalsViewController.swift */; };
 		5CD6DBBC234DD8D300D39CEB /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6DBBB234DD8D300D39CEB /* MainTabViewController.swift */; };
 		5CD6DBBF234DE04300D39CEB /* ArkatsuInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6DBBE234DE04300D39CEB /* ArkatsuInfoViewController.swift */; };
@@ -69,6 +70,7 @@
 		5C167C7E234A2D9A00BA26AD /* CategoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCardView.swift; sourceTree = "<group>"; };
 		5C167C80234A2DEA00BA26AD /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		5C167C82234A2FEE00BA26AD /* CardProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardProgress.swift; sourceTree = "<group>"; };
+		5C79E6542405971E007270F8 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		5CA041C0234A7AA6009B1DD9 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		5CA041C2234AA0A3009B1DD9 /* UIEdgeInsetsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsetsExtension.swift; sourceTree = "<group>"; };
 		5CA041C4234AA1CF009B1DD9 /* CardColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardColorScheme.swift; sourceTree = "<group>"; };
@@ -85,14 +87,14 @@
 		5CA8035723529BAA00A633EF /* MultipeerSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerSession.swift; sourceTree = "<group>"; };
 		5CA8035923529BC200A633EF /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		5CA8035B23529BDB00A633EF /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		5CA8035F2352FBA200A633EF /* CompaniesSceneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompaniesSceneViewController.swift; sourceTree = "<group>"; };
+		5CA8035F2352FBA200A633EF /* AchievementsSceneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsSceneViewController.swift; sourceTree = "<group>"; };
 		5CA803612352FBA200A633EF /* CategoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
-		5CA803622352FBA200A633EF /* CompanyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyModel.swift; sourceTree = "<group>"; };
+		5CA803622352FBA200A633EF /* AchievementModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementModel.swift; sourceTree = "<group>"; };
 		5CA803642352FBA200A633EF /* IGoalProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGoalProgress.swift; sourceTree = "<group>"; };
 		5CA803652352FBA200A633EF /* CategoryLabelDelegateDataSourse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryLabelDelegateDataSourse.swift; sourceTree = "<group>"; };
 		5CA803662352FBA200A633EF /* GoalModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalModel.swift; sourceTree = "<group>"; };
 		5CA803692352FBA200A633EF /* CategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
-		5CA8036A2352FBA200A633EF /* CompanyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyView.swift; sourceTree = "<group>"; };
+		5CA8036A2352FBA200A633EF /* AchievementView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementView.swift; sourceTree = "<group>"; };
 		5CA8036B2352FBA200A633EF /* CompanyGoalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyGoalsViewController.swift; sourceTree = "<group>"; };
 		5CC0585723D3306600FF3DD8 /* WorldData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldData.swift; sourceTree = "<group>"; };
 		5CD6DBBB234DD8D300D39CEB /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 				5CA041C2234AA0A3009B1DD9 /* UIEdgeInsetsExtension.swift */,
 				5CA041D2234B6D3D009B1DD9 /* StringExtension.swift */,
 				5CA803522352825600A633EF /* UITabBarExtension.swift */,
+				5C79E6542405971E007270F8 /* UIImageExtension.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -297,7 +300,7 @@
 		5CA8035E2352FBA200A633EF /* companies scene */ = {
 			isa = PBXGroup;
 			children = (
-				5CA8035F2352FBA200A633EF /* CompaniesSceneViewController.swift */,
+				5CA8035F2352FBA200A633EF /* AchievementsSceneViewController.swift */,
 				5CA803602352FBA200A633EF /* model */,
 				5CA803672352FBA200A633EF /* view */,
 				5CA8036B2352FBA200A633EF /* CompanyGoalsViewController.swift */,
@@ -309,7 +312,7 @@
 			isa = PBXGroup;
 			children = (
 				5CA803612352FBA200A633EF /* CategoryModel.swift */,
-				5CA803622352FBA200A633EF /* CompanyModel.swift */,
+				5CA803622352FBA200A633EF /* AchievementModel.swift */,
 				5CA803632352FBA200A633EF /* company goals model */,
 			);
 			path = model;
@@ -329,7 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				5CA803692352FBA200A633EF /* CategoryView.swift */,
-				5CA8036A2352FBA200A633EF /* CompanyView.swift */,
+				5CA8036A2352FBA200A633EF /* AchievementView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -472,7 +475,7 @@
 				5CA8036F2352FBA200A633EF /* IGoalProgress.swift in Sources */,
 				5C167C7F234A2D9A00BA26AD /* CategoryCardView.swift in Sources */,
 				5CA8035C23529BDB00A633EF /* Utilities.swift in Sources */,
-				5CA8036C2352FBA200A633EF /* CompaniesSceneViewController.swift in Sources */,
+				5CA8036C2352FBA200A633EF /* AchievementsSceneViewController.swift in Sources */,
 				5C167C83234A2FEE00BA26AD /* CardProgress.swift in Sources */,
 				5CD6DBC4234E886A00D39CEB /* DailyBonusDescriptionView.swift in Sources */,
 				5CA803712352FBA200A633EF /* GoalModel.swift in Sources */,
@@ -484,12 +487,13 @@
 				5CA041DE234BDD64009B1DD9 /* UserStatus.swift in Sources */,
 				5CA041D3234B6D3D009B1DD9 /* StringExtension.swift in Sources */,
 				5CA8035623529B8E00A633EF /* ViewController.swift in Sources */,
-				5CA803742352FBA200A633EF /* CompanyView.swift in Sources */,
+				5C79E6552405971E007270F8 /* UIImageExtension.swift in Sources */,
+				5CA803742352FBA200A633EF /* AchievementView.swift in Sources */,
 				5CA803732352FBA200A633EF /* CategoryView.swift in Sources */,
 				5CA041CF234AB93A009B1DD9 /* CompanyProgressColorScheme.swift in Sources */,
 				5CA041C1234A7AA6009B1DD9 /* UIColorExtension.swift in Sources */,
 				5CD6DBC6234F012200D39CEB /* DailyBonusCollectionViewCell.swift in Sources */,
-				5CA8036E2352FBA200A633EF /* CompanyModel.swift in Sources */,
+				5CA8036E2352FBA200A633EF /* AchievementModel.swift in Sources */,
 				5CA803532352825600A633EF /* UITabBarExtension.swift in Sources */,
 				488A9F482338E73100BBD8A5 /* ARViewController.swift in Sources */,
 				5CD6DBC2234DE38600D39CEB /* ActivityView.swift in Sources */,

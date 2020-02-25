@@ -2,7 +2,7 @@
 //  CategoryLabelDelegateDataSourse.swift
 //  Arkatsu
 //
-//  Created by Polina Tarantsova on 13/10/2019.
+//  Created by Margarita Konnova on 13/10/2019.
 //  Copyright © 2019 Apple. All rights reserved.
 //
 
@@ -53,100 +53,100 @@ final class CategoryLabelDelegateDataSourse: UIViewController, UICollectionViewD
   static let fakeCategories: [CategoryModel] = [
     CategoryModel(
       categoryName: "Sports", companiesItems: [
-        CompanyModel(
-          companyName: "Football",
-          companyLogo: UIImage(named: "Football")!,
+        AchievementModel(
+          name: "Football",
+          logo: UIImage(named: "Football")!,
           nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
           lastAchievements: [],
           discount: 1
         ),
-        CompanyModel(
-          companyName: "Ping-Pong",
-          companyLogo: UIImage(named: "ping-pong")!,
+        AchievementModel(
+          name: "Ping-Pong",
+          logo: UIImage(named: "ping-pong")!,
           nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
           lastAchievements: [],
           discount: 1
         ),
-        CompanyModel(
-          companyName: "Bowling",
-          companyLogo: UIImage(named: "bowling")!,
+        AchievementModel(
+          name: "Bowling",
+          logo: UIImage(named: "bowling")!,
           nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
           lastAchievements: [],
           discount: 1
         ),
-        CompanyModel(
-          companyName: "Box",
-          companyLogo: UIImage(named: "boxer")!,
+        AchievementModel(
+          name: "Box",
+          logo: UIImage(named: "boxer")!,
           nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
           lastAchievements: [],
           discount: 1
         ),
-        CompanyModel(
-          companyName: "Golf",
-          companyLogo: UIImage(named: "golf")!,
+        AchievementModel(
+          name: "Golf",
+          logo: UIImage(named: "golf")!,
           nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
           lastAchievements: [],
           discount: 1
         ),
-        CompanyModel(
-          companyName: "Tennis",
-          companyLogo: UIImage(named: "tennis")!,
+        AchievementModel(
+          name: "Tennis",
+          logo: UIImage(named: "tennis")!,
           nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
           lastAchievements: [],
           discount: 1
         ),
-        CompanyModel(
-          companyName: "Basketball",
-          companyLogo: UIImage(named: "basketball")!,
+        AchievementModel(
+          name: "Basketball",
+          logo: UIImage(named: "basketball")!,
           nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
           lastAchievements: [],
           discount: 1
         ),
-        CompanyModel(
-          companyName: "American Football",
-          companyLogo: UIImage(named: "american-football")!,
+        AchievementModel(
+          name: "A. Football",
+          logo: UIImage(named: "american-football")!,
           nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
           lastAchievements: [],
           discount: 1
         ),
-        CompanyModel(
-          companyName: "Cheerleader",
-          companyLogo: UIImage(named: "cheerleader")!,
+        AchievementModel(
+          name: "Cheerleader",
+          logo: UIImage(named: "cheerleader")!,
           nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
           lastAchievements: [],
           discount: 1
         ),
-        CompanyModel(
-          companyName: "Karate",
-          companyLogo: UIImage(named: "karate")!,
+        AchievementModel(
+          name: "Karate",
+          logo: UIImage(named: "karate")!,
           nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
           lastAchievements: [],
           discount: 1
         ),
-        CompanyModel(
-          companyName: "Soccer",
-          companyLogo: UIImage(named: "soccer")!,
+        AchievementModel(
+          name: "Soccer",
+          logo: UIImage(named: "soccer")!,
           nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
           lastAchievements: [],
           discount: 1
         ),
-        CompanyModel(
-          companyName: "Volleyball",
-          companyLogo: UIImage(named: "volleyball")!,
+        AchievementModel(
+          name: "Volleyball",
+          logo: UIImage(named: "volleyball")!,
           nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
           lastAchievements: [],
           discount: 1
         ),
-        CompanyModel(
-          companyName: "Ice Hockey",
-          companyLogo: UIImage(named: "ice-hockey")!,
+        AchievementModel(
+          name: "Ice Hockey",
+          logo: UIImage(named: "ice-hockey")!,
           nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
           lastAchievements: [],
           discount: 1
         ),
-        CompanyModel(
-          companyName: "Weightlift",
-          companyLogo: UIImage(named: "weightlift")!,
+        AchievementModel(
+          name: "Weightlift",
+          logo: UIImage(named: "weightlift")!,
           nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
           lastAchievements: [],
           discount: 1
@@ -155,58 +155,58 @@ final class CategoryLabelDelegateDataSourse: UIViewController, UICollectionViewD
     ),
     CategoryModel(
       categoryName: "Volunteer", companiesItems: [
-        CompanyModel(
-          companyName: "Blood",
-          companyLogo: UIImage(named: "blood-transfusion")!,
+        AchievementModel(
+          name: "Blood",
+          logo: UIImage(named: "blood-transfusion")!,
           nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
           lastAchievements: [],
           discount: 1
         ),
-        CompanyModel(
-          companyName: "Planet",
-          companyLogo: UIImage(named: "teamwork (1)")!,
+        AchievementModel(
+          name: "Planet",
+          logo: UIImage(named: "teamwork (1)")!,
           nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
           lastAchievements: [],
           discount: 1
         ),
-        CompanyModel(
-          companyName: "Event",
-          companyLogo: UIImage(named: "teamwork")!,
+        AchievementModel(
+          name: "Event",
+          logo: UIImage(named: "teamwork")!,
           nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
           lastAchievements: [],
           discount: 1
         ),
-        CompanyModel(
-          companyName: "Disabled",
-          companyLogo: UIImage(named: "volunteer (1)")!,
+        AchievementModel(
+          name: "Disabled",
+          logo: UIImage(named: "volunteer (1)")!,
           nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
           lastAchievements: [],
           discount: 1
         ),
-        CompanyModel(
-          companyName: "Planting",
-          companyLogo: UIImage(named: "volunteer (2)")!,
+        AchievementModel(
+          name: "Planting",
+          logo: UIImage(named: "volunteer (2)")!,
           nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
           lastAchievements: [],
           discount: 1
         ),
-        CompanyModel(
-          companyName: "Cleaning",
-          companyLogo: UIImage(named: "volunteer (3)")!,
+        AchievementModel(
+          name: "Cleaning",
+          logo: UIImage(named: "volunteer (3)")!,
           nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
           lastAchievements: [],
           discount: 1
         ),
-        CompanyModel(
-          companyName: "Garbage",
-          companyLogo: UIImage(named: "volunteer (4)")!,
+        AchievementModel(
+          name: "Garbage",
+          logo: UIImage(named: "volunteer (4)")!,
           nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
           lastAchievements: [],
           discount: 1
         ),
-        CompanyModel(
-          companyName: "Social Help",
-          companyLogo: UIImage(named: "volunteer")!,
+        AchievementModel(
+          name: "Social Help",
+          logo: UIImage(named: "volunteer")!,
           nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
           lastAchievements: [],
           discount: 1

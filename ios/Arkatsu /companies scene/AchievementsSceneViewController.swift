@@ -2,13 +2,13 @@
 //  CompaniesSceneViewController.swift
 //  Arkatsu
 //
-//  Created by Polina Tarantsova on 13/10/2019.
+//  Created by Margarita Konnova on 13/10/2019.
 //  Copyright © 2019 Apple. All rights reserved.
 //
 
 import UIKit
 
-class CompaniesSceneViewController: UIViewController {
+class AchievementsSceneViewController: UIViewController {
 
     let helpText: UILabel
     let categoryNameCollectionView: UICollectionView
@@ -59,7 +59,7 @@ class CompaniesSceneViewController: UIViewController {
     override func viewDidLoad() {
       super.viewDidLoad()
 
-      companyListCollectionView.register(CompanyView.self, forCellWithReuseIdentifier: companyReuseIdentifier)
+      companyListCollectionView.register(AchievementView.self, forCellWithReuseIdentifier: companyReuseIdentifier)
       view.backgroundColor = UIColor.white
       categoryNameCollectionView.register(CategoryView.self, forCellWithReuseIdentifier: categoryReuseIdentifier)
       view.backgroundColor = UIColor.white
@@ -119,7 +119,7 @@ class CompaniesSceneViewController: UIViewController {
     }
   }
   
-  extension CompaniesSceneViewController: UICollectionViewDataSource {
+  extension AchievementsSceneViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
       let selectedCategory = delegateDataSource.selectedIndex
       
@@ -128,7 +128,7 @@ class CompaniesSceneViewController: UIViewController {
     
 
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: companyReuseIdentifier, for: indexPath) as! CompanyView
+    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: companyReuseIdentifier, for: indexPath) as! AchievementView
 
     let selectedCategory = delegateDataSource.selectedIndex
     
@@ -140,7 +140,7 @@ class CompaniesSceneViewController: UIViewController {
   }
 }
 
-extension CompaniesSceneViewController: UICollectionViewDelegateFlowLayout {
+extension AchievementsSceneViewController: UICollectionViewDelegateFlowLayout {
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
     
     return CGSize(
@@ -151,31 +151,31 @@ extension CompaniesSceneViewController: UICollectionViewDelegateFlowLayout {
 }
 
 
-private let fakeCompanies: [CompanyModel] = [
-  CompanyModel(
-    companyName: "McDonalds",
-    companyLogo: UIImage(named: "burger")!,
+private let fakeCompanies: [AchievementModel] = [
+  AchievementModel(
+    name: "McDonalds",
+    logo: UIImage(named: "burger")!,
     nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
     lastAchievements: [],
     discount: 1
   ),
-  CompanyModel(
-    companyName: "McDonalds",
-    companyLogo: UIImage(named: "burger")!,
+  AchievementModel(
+    name: "McDonalds",
+    logo: UIImage(named: "burger")!,
     nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
     lastAchievements: [],
     discount: 1
   ),
-  CompanyModel(
-    companyName: "McDonalds",
-    companyLogo: UIImage(named: "burger")!,
+  AchievementModel(
+    name: "McDonalds",
+    logo: UIImage(named: "burger")!,
     nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
     lastAchievements: [],
     discount: 1
   ),
-  CompanyModel(
-    companyName: "McDonalds",
-    companyLogo: UIImage(named: "burger")!,
+  AchievementModel(
+    name: "McDonalds",
+    logo: UIImage(named: "burger")!,
     nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
     lastAchievements: [],
     discount: 1
@@ -184,7 +184,7 @@ private let fakeCompanies: [CompanyModel] = [
 
 
 private enum Specs {
-  static let title = "Events"
+  static let title = "Achievments"
   static let helpFieldFontSize = CGFloat(44)
   static let commonInsets = UIEdgeInsets(uniform: 32)
   static let collectionViewHeightRatio = CGFloat(0.84)

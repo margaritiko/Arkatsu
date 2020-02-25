@@ -23,7 +23,7 @@ class MainTabViewController: UITabBarController {
     UITabBar.appearance().unselectedItemTintColor = UIColor.systemGray
 
     let allInfoViewController = ArkatsuInfoViewController()
-    let companiesViewController = CompaniesSceneViewController()
+    let companiesViewController = AchievementsSceneViewController()
 
     if ARWorldTrackingConfiguration.isSupported {
       let arController = UIStoryboard.init(
