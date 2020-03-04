@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uG1-pH-g2O">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16085" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a4f-TS-PZg">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16078.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -152,6 +152,66 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-65" y="-219"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="Jn4-Wu-Oif">
+            <objects>
+                <viewController id="a4f-TS-PZg" customClass="LoginViewController" customModule="Arkatsu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9A0-Uz-qff">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wes-4W-1k7">
+                                <rect key="frame" x="56" y="201" width="263" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Wes-4W-1k7" secondAttribute="height" multiplier="263:44" id="eE8-NL-e2L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickedSignIn:" destination="a4f-TS-PZg" eventType="touchUpInside" id="OhM-Xm-dGN"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8xl-o5-SCD">
+                                <rect key="frame" x="16" y="274" width="343" height="286"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yh3-Po-qEi">
+                                <rect key="frame" x="56" y="146" width="263" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Yh3-Po-qEi" secondAttribute="height" multiplier="263:44" id="zf3-d2-F5c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2470588235" green="0.81176470590000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BKS-96-4yx" firstAttribute="trailing" secondItem="8xl-o5-SCD" secondAttribute="trailing" constant="16" id="9qJ-0G-9uh"/>
+                            <constraint firstItem="BKS-96-4yx" firstAttribute="bottom" secondItem="8xl-o5-SCD" secondAttribute="bottom" constant="107" id="IFE-02-bkE"/>
+                            <constraint firstItem="8xl-o5-SCD" firstAttribute="top" secondItem="Wes-4W-1k7" secondAttribute="bottom" constant="29" id="ORN-qn-8Vl"/>
+                            <constraint firstItem="Yh3-Po-qEi" firstAttribute="top" secondItem="BKS-96-4yx" secondAttribute="top" constant="146" id="Ys4-eD-KKI"/>
+                            <constraint firstItem="Wes-4W-1k7" firstAttribute="top" secondItem="Yh3-Po-qEi" secondAttribute="bottom" constant="11" id="Yx4-6N-g9K"/>
+                            <constraint firstItem="8xl-o5-SCD" firstAttribute="leading" secondItem="BKS-96-4yx" secondAttribute="leading" constant="16" id="gdE-BE-utk"/>
+                            <constraint firstItem="Wes-4W-1k7" firstAttribute="leading" secondItem="BKS-96-4yx" secondAttribute="leading" constant="56" id="ika-bw-YET"/>
+                            <constraint firstItem="Yh3-Po-qEi" firstAttribute="leading" secondItem="BKS-96-4yx" secondAttribute="leading" constant="56" id="mlN-Bd-Lga"/>
+                            <constraint firstItem="BKS-96-4yx" firstAttribute="trailing" secondItem="Yh3-Po-qEi" secondAttribute="trailing" constant="56" id="pSW-yM-LZz"/>
+                            <constraint firstItem="BKS-96-4yx" firstAttribute="trailing" secondItem="Wes-4W-1k7" secondAttribute="trailing" constant="56" id="zCE-xr-ZyV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BKS-96-4yx"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="8xl-o5-SCD" id="aOj-E6-vRu"/>
+                        <outlet property="loginTextField" destination="Yh3-Po-qEi" id="4nv-tY-xij"/>
+                        <outlet property="signInButton" destination="Wes-4W-1k7" id="ta9-0z-6YT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JQn-CH-M3t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="332.38380809595208"/>
         </scene>
     </scenes>
     <resources>

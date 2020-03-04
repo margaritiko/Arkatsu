@@ -18,8 +18,6 @@ class MainTabViewController: UITabBarController {
     tabBar.backgroundColor = UIColor(rgb: 0xFAFAFA)
     view.backgroundColor = UIColor.white
 
-    AppDelegate.tabBarHeight = tabBar.frame.height
-
     UITabBar.appearance().unselectedItemTintColor = UIColor.systemGray
 
     let allInfoViewController = ArkatsuInfoViewController()
@@ -37,4 +35,15 @@ class MainTabViewController: UITabBarController {
     }
   }
 
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+
+    let kBarHeight = CGFloat(70)
+    tabBar.frame = CGRect(
+      origin: CGPoint(x: 0, y: view.frame.height - kBarHeight),
+      size: CGSize(width: tabBar.frame.width, height: kBarHeight)
+    )
+    AppDelegate.tabBarHeight = tabBar.frame.height
+  }
 }
+

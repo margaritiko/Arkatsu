@@ -19,9 +19,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
-    window?.rootViewController = MainTabViewController()
-    
     window?.makeKeyAndVisible()
     return true
+  }
+
+  func setRootViewController(_ vc: UIViewController, animated: Bool = true) {
+      guard animated, let window = self.window else {
+          self.window?.rootViewController = vc
+          self.window?.makeKeyAndVisible()
+          return
+      }
+
+      window.rootViewController = vc
+      window.makeKeyAndVisible()
+      UIView.transition(with: window,
+                        duration: 0.3,
+                        options: .transitionCrossDissolve,
+                        animations: nil,
+                        completion: nil)
   }
 }

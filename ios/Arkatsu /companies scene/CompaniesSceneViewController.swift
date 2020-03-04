@@ -2,7 +2,7 @@
 //  CompaniesSceneViewController.swift
 //  Arkatsu
 //
-//  Created by Polina Tarantsova on 13/10/2019.
+//  Created by Margarita Konnova on 02/02/2020.
 //  Copyright © 2019 Apple. All rights reserved.
 //
 
@@ -86,7 +86,7 @@ class CompaniesSceneViewController: UIViewController {
         x: 16,
         y: 16 + categoryNameCollectionView.frame.maxY,
         width: UIScreen.main.bounds.width - Specs.commonInsets.left,
-        height: UIScreen.main.bounds.height - Specs.commonInsets.verticalSum - categoryNameCollectionView.frame.height - (AppDelegate.tabBarHeight ?? 0)
+        height: UIScreen.main.bounds.height - Specs.commonInsets.verticalSum - categoryNameCollectionView.frame.height - (AppDelegate.tabBarHeight ?? 0) * 2
       )
 
       view.addSubview(helpText)
@@ -157,28 +157,32 @@ private let fakeCompanies: [CompanyModel] = [
     companyLogo: UIImage(named: "burger")!,
     nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
     lastAchievements: [],
-    discount: 1
+    discount: 1,
+    activated: true
   ),
   CompanyModel(
     companyName: "McDonalds",
     companyLogo: UIImage(named: "burger")!,
     nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
     lastAchievements: [],
-    discount: 1
+    discount: 1,
+    activated: true
   ),
   CompanyModel(
     companyName: "McDonalds",
     companyLogo: UIImage(named: "burger")!,
     nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
     lastAchievements: [],
-    discount: 1
+    discount: 1,
+    activated: true
   ),
   CompanyModel(
     companyName: "McDonalds",
     companyLogo: UIImage(named: "burger")!,
     nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
     lastAchievements: [],
-    discount: 1
+    discount: 1,
+    activated: true
   )
 ]
 

@@ -2,7 +2,7 @@
 //  ARViewController.swift
 //  Arkatsu
 //
-//  Created by Polina Tarantsova on 23/09/2019.
+//  Created by Margarita Konnova on 02/02/2020.
 //  Copyright © 2019 Apple. All rights reserved.
 //
 

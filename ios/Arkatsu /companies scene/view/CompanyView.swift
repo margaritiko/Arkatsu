@@ -2,7 +2,7 @@
 //  CompanyView.swift
 //  Arkatsu
 //
-//  Created by Polina Tarantsova on 13/10/2019.
+//  Created by Margarita Konnova on 02/02/2020.
 //  Copyright © 2019 Apple. All rights reserved.
 //
 
@@ -42,14 +42,17 @@ final class CompanyView: UICollectionViewCell {
      self.model = model
      // self.layout = layout
 
-    logoImageView.image = model.companyLogo
-    companyName.attributedText = NSAttributedString(
-      string: model.companyName, attributes: [:
-        // add attributes
-       ]
-     )
+    if model.activated {
+      logoImageView.image = model.companyLogo
+    } else {
+      logoImageView.image = model.companyLogo.grayscaled
+    }
 
-     // backView.backgroundColor =
+    companyName.attributedText = NSAttributedString(
+      string: model.companyName, attributes: [
+        NSAttributedString.Key.font: UIFont.systemFont(ofSize: Specs.nameFontSize),
+      ]
+    )
 
      addSubview(backView)
      backView.addSubview(logoImageView)
@@ -79,6 +82,7 @@ final class CompanyView: UICollectionViewCell {
 }
 
 private enum Specs {
+  static let nameFontSize = CGFloat(15)
   static let imageRatio = CGFloat(0.8)
   static let cellInsets = UIEdgeInsets(top: 2, left: 8, bottom: 2, right: 8)
 }

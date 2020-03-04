@@ -109,21 +109,21 @@ private let fakeModels: [DailyBonusModel] = [
     description: "This week will be the final of the ICPC programming competition. Become involved in this event!",
     title: "ICPC",
     category: "Uni",
-    bonusLogo: UIImage(named: "ICPC")!
+    bonusLogo: UIImage(named: "education_icon_3")!
   ),
 
   DailyBonusModel(
     description: "Jeremy is inviting everyone to play football. We are gathering today at 17:00 at the third field. Jeremy is inviting everyone to play football. We are gathering today at 17:00 at the third field.",
     title: "Football",
     category: "Entertainment",
-    bonusLogo: UIImage(named: "Football")!
+    bonusLogo: UIImage(named: "education_icon_2")!
   ),
 
   DailyBonusModel(
     description: "Pasha collects a company to play the mafia. We are going to 103 rooms at 10 pm.",
     title: "Board games",
     category: "Board games",
-    bonusLogo: UIImage(named: "Board_games")!
+    bonusLogo: UIImage(named: "education_icon_1")!
   )
 ]
 

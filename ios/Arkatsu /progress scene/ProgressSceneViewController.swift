@@ -53,9 +53,9 @@ class ProgressSceneViewController: UIViewController {
     tableView.register(CategoryCardView.self, forCellReuseIdentifier: cardReuseIdentifier)
     tableView.frame = CGRect(
       x: Specs.tableViewInsets.left,
-      y: Specs.userInfoInsets.top + Specs.tableViewInsets.top * 3 + aggregatedInfoView.frame.height,
+      y: Specs.userInfoInsets.top + Specs.tableViewInsets.top * 4 + aggregatedInfoView.frame.height,
       width: cardViewWidth,
-      height: view.frame.height - Specs.tableViewInsets.verticalSum - aggregatedInfoView.frame.height - Specs.bottomOffset
+      height: view.frame.height - Specs.tableViewInsets.verticalSum - Specs.tableViewInsets.bottom - aggregatedInfoView.frame.height - Specs.bottomOffset
     )
     tableView.backgroundColor = UIColor.clear
 
@@ -113,7 +113,7 @@ extension ProgressSceneViewController: UITableViewDataSource {
 
 private let fakeUserInfoModel = UserAggregatedInfoModel(
   logo: UIImage(named: "userLogo")!,
-  name: "John",
+  name: "Piki",
   age: 20,
   status: .Satisfaction
 )
