@@ -131,7 +131,7 @@ private let fakeModels: [CategoryCardModel] = [
     shouldShowDetails: false,
     categoryName: "Education",
     companyLogo: UIImage(named: "books")!,
-    colorScheme: .withGreenComponent
+    colorScheme: .withVioletComponent
   ),
 
   CategoryCardModel(
@@ -145,29 +145,27 @@ private let fakeModels: [CategoryCardModel] = [
     ],
     shouldShowDetails: false,
     categoryName: "Sport",
-    companyLogo: UIImage(named: "sport")!,
+    companyLogo: UIImage(named: "tennis")!,
     colorScheme: .withRedComponent
   ),
-  
+  CategoryCardModel(
+    maxValue: 40,
+    companiesProgressItems: [
+      CompanyProgressInfo(companyName: "Board games", value: 20),
+      CompanyProgressInfo(companyName: "University day", value: 18),
+    ],
+    shouldShowDetails: false,
+    categoryName: "Party",
+    companyLogo: UIImage(named: "confetti-1")!,
+    colorScheme: .withGreenComponent
+  ),
   CategoryCardModel(
     maxValue: 40,
     companiesProgressItems: [],
     shouldShowDetails: false,
     categoryName: "Volonteer",
     companyLogo: UIImage(named: "ICPC")!,
-    colorScheme: .`withTurquoiseComponent`
-  ),
-
-  CategoryCardModel(
-    maxValue: 40,
-    companiesProgressItems: [
-      CompanyProgressInfo(companyName: "Board games", value: 18),
-      CompanyProgressInfo(companyName: "University day", value: 10),
-    ],
-    shouldShowDetails: false,
-    categoryName: "Party",
-    companyLogo: UIImage(named: "party")!,
-    colorScheme: .withVioletComponent
+    colorScheme: .`withYellowComponent`
   ),
 ]
 
