@@ -50,6 +50,7 @@
 		5CD6DBC6234F012200D39CEB /* DailyBonusCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6DBC5234F012200D39CEB /* DailyBonusCollectionViewCell.swift */; };
 		5CD6DBC9234F01A800D39CEB /* DailyBonusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6DBC8234F01A800D39CEB /* DailyBonusModel.swift */; };
 		5CD6DBCC2351DC2E00D39CEB /* DailyBonusDescriptionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6DBCB2351DC2E00D39CEB /* DailyBonusDescriptionLayout.swift */; };
+		5CDE02FE2410778900DD1594 /* SceneConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDE02FD2410778900DD1594 /* SceneConfigurator.swift */; };
 		5CE4BF86232E938600A5E7B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE4BF85232E938600A5E7B8 /* AppDelegate.swift */; };
 		5CF1B3CD24104A6E00E0975F /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF1B3CC24104A6E00E0975F /* UIImageExtensions.swift */; };
 		5CF1B3CF2410581700E0975F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF1B3CE2410581700E0975F /* LoginViewController.swift */; };
@@ -109,6 +110,7 @@
 		5CD6DBC5234F012200D39CEB /* DailyBonusCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBonusCollectionViewCell.swift; sourceTree = "<group>"; };
 		5CD6DBC8234F01A800D39CEB /* DailyBonusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBonusModel.swift; sourceTree = "<group>"; };
 		5CD6DBCB2351DC2E00D39CEB /* DailyBonusDescriptionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBonusDescriptionLayout.swift; sourceTree = "<group>"; };
+		5CDE02FD2410778900DD1594 /* SceneConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneConfigurator.swift; sourceTree = "<group>"; };
 		5CE4BF85232E938600A5E7B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CF1B3CC24104A6E00E0975F /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		5CF1B3CE2410581700E0975F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -313,6 +315,7 @@
 				5CA8035923529BC200A633EF /* RoundedButton.swift */,
 				5CA8035B23529BDB00A633EF /* Utilities.swift */,
 				5CC0585723D3306600FF3DD8 /* WorldData.swift */,
+				5CDE02FD2410778900DD1594 /* SceneConfigurator.swift */,
 			);
 			path = "multipeer ar controller";
 			sourceTree = "<group>";
@@ -567,6 +570,7 @@
 				488A9F482338E73100BBD8A5 /* ARViewController.swift in Sources */,
 				5CD6DBC2234DE38600D39CEB /* ActivityView.swift in Sources */,
 				5CA041C7234AAED9009B1DD9 /* CategoryCardViewLayout.swift in Sources */,
+				5CDE02FE2410778900DD1594 /* SceneConfigurator.swift in Sources */,
 				5CE4BF86232E938600A5E7B8 /* AppDelegate.swift in Sources */,
 				5CD6DBCC2351DC2E00D39CEB /* DailyBonusDescriptionLayout.swift in Sources */,
 				5CA8036D2352FBA200A633EF /* CategoryModel.swift in Sources */,
