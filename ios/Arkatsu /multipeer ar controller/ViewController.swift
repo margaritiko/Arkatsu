@@ -17,7 +17,6 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
   @IBOutlet weak var sessionInfoLabel: UILabel!
   @IBOutlet weak var sceneView: ARSCNView!
   @IBOutlet weak var sendMapButton: UIButton!
-  @IBOutlet weak var mappingStatusLabel: UILabel!
 
   var petModel: SCNNode?
   var tapCounter: Int = 0
@@ -111,7 +110,6 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
     @unknown default:
       fatalError()
     }
-    mappingStatusLabel.text = frame.worldMappingStatus.description
     updateSessionInfoLabel(for: frame, trackingState: frame.camera.trackingState)
   }
 
@@ -318,5 +316,5 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
 
 private enum Specs {
   static let characterJumpDuration = 1
-  static let heightOfJump = Float(20)
+  static let heightOfJump = Float(0.1)
 }

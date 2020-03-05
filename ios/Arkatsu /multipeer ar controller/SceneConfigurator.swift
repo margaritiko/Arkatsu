@@ -14,7 +14,7 @@ struct SceneConfigurator {
 
     static func loadAnimation(animationKey: String, identifier: String) -> CAAnimation? {
 
-        let sceneURL = Bundle.main.url(forResource: animationKey, withExtension: "dae", subdirectory: "models.scnassets")!
+        let sceneURL = Bundle.main.url(forResource: animationKey, withExtension: "dae", subdirectory: "Models.scnassets")!
 
         let source = SCNSceneSource(url: sceneURL, options: nil)
 

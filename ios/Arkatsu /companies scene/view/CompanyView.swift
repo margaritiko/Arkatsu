@@ -27,8 +27,6 @@ final class CompanyView: UICollectionViewCell {
     let collectionViewLayout = UICollectionViewFlowLayout()
     collectionViewLayout.scrollDirection = .vertical
     
-      // add spaces
-    
     super.init(frame: frame)
     
     backgroundColor = UIColor.clear
@@ -67,8 +65,8 @@ final class CompanyView: UICollectionViewCell {
     logoImageView.frame = CGRect(
       x: Specs.cellInsets.left,
       y: Specs.cellInsets.top,
-      width: frame.width * Specs.imageRatio,
-      height: frame.height * Specs.imageRatio
+      width: frame.width * Specs.imageRatio - Specs.additionalSpace,
+      height: frame.height * Specs.imageRatio - Specs.additionalSpace
     )
     
     companyName.frame = CGRect(
@@ -82,7 +80,8 @@ final class CompanyView: UICollectionViewCell {
 }
 
 private enum Specs {
-  static let nameFontSize = CGFloat(15)
+  static let additionalSpace = CGFloat(8)
+  static let nameFontSize = CGFloat(14)
   static let imageRatio = CGFloat(0.8)
   static let cellInsets = UIEdgeInsets(top: 2, left: 8, bottom: 2, right: 8)
 }

@@ -42,7 +42,6 @@
 		5CA803712352FBA200A633EF /* GoalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA803662352FBA200A633EF /* GoalModel.swift */; };
 		5CA803732352FBA200A633EF /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA803692352FBA200A633EF /* CategoryView.swift */; };
 		5CA803742352FBA200A633EF /* CompanyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA8036A2352FBA200A633EF /* CompanyView.swift */; };
-		5CA803752352FBA200A633EF /* CompanyGoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA8036B2352FBA200A633EF /* CompanyGoalsViewController.swift */; };
 		5CD6DBBC234DD8D300D39CEB /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6DBBB234DD8D300D39CEB /* MainTabViewController.swift */; };
 		5CD6DBBF234DE04300D39CEB /* ArkatsuInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6DBBE234DE04300D39CEB /* ArkatsuInfoViewController.swift */; };
 		5CD6DBC2234DE38600D39CEB /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6DBC1234DE38600D39CEB /* ActivityView.swift */; };
@@ -101,7 +100,6 @@
 		5CA803662352FBA200A633EF /* GoalModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalModel.swift; sourceTree = "<group>"; };
 		5CA803692352FBA200A633EF /* CategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		5CA8036A2352FBA200A633EF /* CompanyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyView.swift; sourceTree = "<group>"; };
-		5CA8036B2352FBA200A633EF /* CompanyGoalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyGoalsViewController.swift; sourceTree = "<group>"; };
 		5CC0585723D3306600FF3DD8 /* WorldData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldData.swift; sourceTree = "<group>"; };
 		5CD6DBBB234DD8D300D39CEB /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		5CD6DBBE234DE04300D39CEB /* ArkatsuInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArkatsuInfoViewController.swift; sourceTree = "<group>"; };
@@ -326,7 +324,6 @@
 				5CA8035F2352FBA200A633EF /* CompaniesSceneViewController.swift */,
 				5CA803602352FBA200A633EF /* model */,
 				5CA803672352FBA200A633EF /* view */,
-				5CA8036B2352FBA200A633EF /* CompanyGoalsViewController.swift */,
 			);
 			path = "companies scene";
 			sourceTree = "<group>";
@@ -575,7 +572,6 @@
 				5CD6DBCC2351DC2E00D39CEB /* DailyBonusDescriptionLayout.swift in Sources */,
 				5CA8036D2352FBA200A633EF /* CategoryModel.swift in Sources */,
 				5CD6DBC9234F01A800D39CEB /* DailyBonusModel.swift in Sources */,
-				5CA803752352FBA200A633EF /* CompanyGoalsViewController.swift in Sources */,
 				5CD6DBBF234DE04300D39CEB /* ArkatsuInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

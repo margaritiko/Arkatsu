@@ -44,8 +44,8 @@ final class CategoryLabelDelegateDataSourse: UIViewController, UICollectionViewD
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
     
     return CGSize(
-      width: UIScreen.main.bounds.width / 3.5,
-      height: UIScreen.main.bounds.width / 3.5
+      width: UIScreen.main.bounds.width / 3,
+      height: UIScreen.main.bounds.width / 3
     )
   }
   
@@ -61,14 +61,14 @@ final class CategoryLabelDelegateDataSourse: UIViewController, UICollectionViewD
           discount: 1,
           activated: true
         ),
-        CompanyModel(
-          companyName: "Ping-Pong",
-          companyLogo: UIImage(named: "ping-pong")!,
-          nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
-          lastAchievements: [],
-          discount: 1,
-          activated: true
-        ),
+//        CompanyModel(
+//          companyName: "Ping-Pong",
+//          companyLogo: UIImage(named: "ping-pong")!,
+//          nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
+//          lastAchievements: [],
+//          discount: 1,
+//          activated: true
+//        ),
         CompanyModel(
           companyName: "Bowling",
           companyLogo: UIImage(named: "bowling")!,
@@ -102,7 +102,7 @@ final class CategoryLabelDelegateDataSourse: UIViewController, UICollectionViewD
           activated: true
         ),
         CompanyModel(
-          companyName: "Basketball",
+          companyName: "Basket",
           companyLogo: UIImage(named: "basketball")!,
           nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
           lastAchievements: [],
@@ -110,7 +110,7 @@ final class CategoryLabelDelegateDataSourse: UIViewController, UICollectionViewD
           activated: true
         ),
         CompanyModel(
-          companyName: "Cheerleader",
+          companyName: "Cheerer",
           companyLogo: UIImage(named: "cheerleader")!,
           nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
           lastAchievements: [],
@@ -142,7 +142,7 @@ final class CategoryLabelDelegateDataSourse: UIViewController, UICollectionViewD
           activated: false
         ),
         CompanyModel(
-          companyName: "Ice Hockey",
+          companyName: "Hockey",
           companyLogo: UIImage(named: "ice-hockey")!,
           nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
           lastAchievements: [],
@@ -217,14 +217,6 @@ final class CategoryLabelDelegateDataSourse: UIViewController, UICollectionViewD
           discount: 1,
           activated: false
         ),
-        CompanyModel(
-          companyName: "Social Help",
-          companyLogo: UIImage(named: "volunteer")!,
-          nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
-          lastAchievements: [],
-          discount: 1,
-          activated: false
-        )
       ]
     )
   ]

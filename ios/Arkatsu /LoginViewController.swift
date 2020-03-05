@@ -25,9 +25,9 @@ class LoginViewController: UIViewController {
 
     loginTextField.placeholder = "Your pet name"
     loginTextField.layer.borderColor = UIColor.white.cgColor
-    loginTextField.layer.cornerRadius = loginTextField.frame.height / 2
+    loginTextField.layer.cornerRadius = loginTextField.frame.height * 3 / 7
     loginTextField.layer.masksToBounds = true
-    signInButton.layer.cornerRadius = signInButton.frame.height / 2
+    signInButton.layer.cornerRadius = signInButton.frame.height * 3 / 7
     signInButton.layer.masksToBounds = true
 
     view.backgroundColor = UIColor(red:0.35, green:0.79, blue:0.98, alpha:1.0)

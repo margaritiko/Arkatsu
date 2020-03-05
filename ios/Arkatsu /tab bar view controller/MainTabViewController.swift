@@ -38,7 +38,7 @@ class MainTabViewController: UITabBarController {
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
 
-    let kBarHeight = CGFloat(70)
+    let kBarHeight = UIScreen.main.bounds.height * 0.12
     tabBar.frame = CGRect(
       origin: CGPoint(x: 0, y: view.frame.height - kBarHeight),
       size: CGSize(width: tabBar.frame.width, height: kBarHeight)

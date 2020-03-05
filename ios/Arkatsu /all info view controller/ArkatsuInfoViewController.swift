@@ -14,6 +14,7 @@ class ArkatsuInfoViewController: UIViewController {
   let activityView: ActivityView
   let collectionView: UICollectionView
   let dailyBonusLabel: UILabel
+  let scrollView = UIScrollView(frame: .zero)
 
   init() {
     dailyBonusLabel = UILabel(frame: .zero)
@@ -37,10 +38,15 @@ class ArkatsuInfoViewController: UIViewController {
       forCellWithReuseIdentifier: dailyBonusIdentifier
     )
 
-    view.addSubview(animatedArkatsu)
-    view.addSubview(activityView)
-    view.addSubview(dailyBonusLabel)
-    view.addSubview(collectionView)
+    scrollView.frame = view.frame
+    scrollView.isScrollEnabled = true
+    scrollView.contentSize = CGSize(width: view.frame.width, height: view.frame.height * 1.00005)
+
+    scrollView.addSubview(animatedArkatsu)
+    scrollView.addSubview(activityView)
+    scrollView.addSubview(dailyBonusLabel)
+    scrollView.addSubview(collectionView)
+    view.addSubview(scrollView)
 
     tabBarItem = UITabBarItem(
       title: nil,

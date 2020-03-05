@@ -61,17 +61,14 @@
                                     <outletCollection property="gestureRecognizers" destination="CRm-va-wAf" appends="YES" id="bKK-fy-s2i"/>
                                 </connections>
                             </arscnView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGR-cQ-Qdp">
-                                <rect key="frame" x="166.5" y="564" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOu-Ba-7Ke" customClass="RoundedButton" customModule="Arkatsu" customModuleProvider="target">
-                                <rect key="frame" x="117.5" y="593" width="140" height="34"/>
+                                <rect key="frame" x="16" y="553" width="343" height="34"/>
+                                <color key="backgroundColor" red="0.36261832710000003" green="0.78850960729999997" blue="0.9804208875" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <inset key="contentEdgeInsets" minX="13" minY="8" maxX="13" maxY="8"/>
-                                <state key="normal" title="Send World Map"/>
+                                <state key="normal" title="Send World Map">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="shareSession:" destination="dJl-Dv-ok3" eventType="touchUpInside" id="UBW-Ra-w6t"/>
                                 </connections>
@@ -89,7 +86,7 @@
                                                 <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="uIp-H4-fph"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -100,6 +97,8 @@
                                         <constraint firstAttribute="trailing" secondItem="JKp-C7-Mbz" secondAttribute="trailing" constant="14" id="yLS-yw-Mrc"/>
                                     </constraints>
                                 </view>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <blurEffect style="light"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -122,21 +121,19 @@
                         <constraints>
                             <constraint firstItem="JqA-Za-ELY" firstAttribute="top" secondItem="lvk-0h-EOJ" secondAttribute="top" id="2C6-2t-zv8"/>
                             <constraint firstItem="U4x-7f-6xd" firstAttribute="leading" secondItem="JqA-Za-ELY" secondAttribute="leading" id="Cjk-hf-7NC"/>
-                            <constraint firstItem="JqA-Za-ELY" firstAttribute="bottom" secondItem="sOu-Ba-7Ke" secondAttribute="bottom" constant="40" id="HgR-xu-Yd1"/>
-                            <constraint firstItem="fOG-C7-qvY" firstAttribute="leading" secondItem="gek-Pt-J4T" secondAttribute="leadingMargin" id="JgL-Fu-VEZ"/>
-                            <constraint firstItem="bGR-cQ-Qdp" firstAttribute="centerX" secondItem="sOu-Ba-7Ke" secondAttribute="centerX" id="PwW-hn-2ke"/>
+                            <constraint firstItem="sOu-Ba-7Ke" firstAttribute="bottom" secondItem="U4x-7f-6xd" secondAttribute="bottom" constant="-80" id="c38-Gp-0Lv"/>
                             <constraint firstItem="fOG-C7-qvY" firstAttribute="top" secondItem="JqA-Za-ELY" secondAttribute="top" constant="20" id="dmB-Sz-a9J"/>
                             <constraint firstItem="JqA-Za-ELY" firstAttribute="trailing" secondItem="U4x-7f-6xd" secondAttribute="trailing" id="gSb-ER-MbI"/>
-                            <constraint firstItem="sOu-Ba-7Ke" firstAttribute="top" secondItem="bGR-cQ-Qdp" secondAttribute="bottom" constant="8" id="mVw-jS-oUN"/>
+                            <constraint firstItem="U4x-7f-6xd" firstAttribute="leading" secondItem="fOG-C7-qvY" secondAttribute="leading" constant="-16" id="icl-CJ-1Rv"/>
                             <constraint firstItem="lvk-0h-EOJ" firstAttribute="trailing" secondItem="JqA-Za-ELY" secondAttribute="trailing" id="omd-nk-UFm"/>
                             <constraint firstAttribute="bottom" secondItem="U4x-7f-6xd" secondAttribute="bottom" id="rFe-IV-1X5"/>
-                            <constraint firstItem="sOu-Ba-7Ke" firstAttribute="centerX" secondItem="U4x-7f-6xd" secondAttribute="centerX" id="rzU-Kg-Dhq"/>
+                            <constraint firstItem="sOu-Ba-7Ke" firstAttribute="leading" secondItem="JqA-Za-ELY" secondAttribute="leading" constant="16" id="whM-cr-3iC"/>
+                            <constraint firstItem="JqA-Za-ELY" firstAttribute="trailing" secondItem="sOu-Ba-7Ke" secondAttribute="trailing" constant="16" id="wsR-32-ooz"/>
                             <constraint firstAttribute="top" secondItem="U4x-7f-6xd" secondAttribute="top" id="yF2-rj-VTQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JqA-Za-ELY"/>
                     </view>
                     <connections>
-                        <outlet property="mappingStatusLabel" destination="bGR-cQ-Qdp" id="WOU-8z-C0D"/>
                         <outlet property="sceneView" destination="U4x-7f-6xd" id="O0Q-6M-Vy4"/>
                         <outlet property="sendMapButton" destination="sOu-Ba-7Ke" id="e6P-HB-dml"/>
                         <outlet property="sessionInfoLabel" destination="JKp-C7-Mbz" id="5Pb-SU-i4X"/>
