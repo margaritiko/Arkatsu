@@ -38,9 +38,9 @@ class DailyBonusViewSet(viewsets.ModelViewSet):
     serializer_class = DailyBonusSerializer
 
 router = routers.DefaultRouter()
-router.register(r'students', Student, basename='Student')
-router.register(r'daily_bonus', DailyBonus, basename='DailyBonus')
-router.register(r'categories', Category, basename='Category')
+router.register(r'students', StudentViewSet, basename='Student')
+router.register(r'daily_bonus', CategoryViewSet, basename='DailyBonus')
+router.register(r'categories', DailyBonusViewSet, basename='Category')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
