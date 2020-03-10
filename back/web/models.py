@@ -1,40 +1,31 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-# Create your models here.
+
+class Category(models.Model):
+    title = models.CharField(max_length=25)
+    first = models.CharField(max_length=25)
+    second = models.CharField(max_length=25)
+    third = models.CharField(max_length=25)
+    forth = models.CharField(max_length=25)
+
+    first_cost = models.IntegerField()
+    second_cost = models.IntegerField()
+    third_cost = models.IntegerField()
+    forth_cost = models.IntegerField()
 
 
 class Student(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    achievments = models.ArrayField(models.CharField(max_length=100))
+    name = models.CharField(max_length=100)
+    status = models.CharField(max_length=25)
+    level = models.IntegerField()
 
-    name = models.CharField(max_length=25)
-    group = models.CharField(max_length=25)
-    age = models.IntegerField(default=1)
-
-
-class StudentOrganization(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
-
-    name = models.CharField(max_length=25)
-    description = models.TextField()
+    categories = models.ManyToManyField(Category)
 
 
-class Event(models.Model):
-    organization = models.ForeignKey(
-        StudentOrganization, related_name="events", on_delete=models.CASCADE
-    )
-    students = models.ManyToManyField(Student, related_name="events")
+class DailyBonus(models.Model):
+    title = models.CharField(max_length=64)
+    description = models.CharField(max_length=256)
 
-    name = models.CharField(max_length=25)
-    description = models.TextField()
-
-
-class Achievment(models.Model):
-    event = models.ForeignKey(
-        Event, related_name="achievments", on_delete=models.CASCADE
-    )
-    students = models.ManyToManyField(Student, related_name="achievments")
-
-    name = models.CharField(max_length=25)
-    description = models.TextField()
 

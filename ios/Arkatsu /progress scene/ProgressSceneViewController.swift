@@ -114,7 +114,7 @@ extension ProgressSceneViewController: UITableViewDataSource {
 private let fakeUserInfoModel = UserAggregatedInfoModel(
   logo: UIImage(named: "userLogo")!,
   name: "Piki",
-  age: 20,
+  age: 2,
   status: .Satisfaction
 )
 

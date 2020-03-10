@@ -29,9 +29,10 @@ final class UserHeaderAggregatedInfo: UIView {
   func configure(withModel model: UserAggregatedInfoModel) {
 
     logo.image = model.logo
-    
+
+    let petName = UserDefaults.standard.string(forKey: "Pet name") ?? model.name
     info.attributedText = NSAttributedString(
-      string: "\(model.name) - \(model.age) lvl",
+      string: "\(petName) - \(model.age) lvl",
       attributes: [
         NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: Specs.infoFontSize),
         NSAttributedString.Key.foregroundColor: UIColor.black,

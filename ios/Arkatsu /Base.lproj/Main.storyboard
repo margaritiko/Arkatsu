@@ -62,7 +62,7 @@
                                 </connections>
                             </arscnView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOu-Ba-7Ke" customClass="RoundedButton" customModule="Arkatsu" customModuleProvider="target">
-                                <rect key="frame" x="16" y="553" width="343" height="34"/>
+                                <rect key="frame" x="16" y="483" width="343" height="34"/>
                                 <color key="backgroundColor" red="0.36261832710000003" green="0.78850960729999997" blue="0.9804208875" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <inset key="contentEdgeInsets" minX="13" minY="8" maxX="13" maxY="8"/>
@@ -121,7 +121,7 @@
                         <constraints>
                             <constraint firstItem="JqA-Za-ELY" firstAttribute="top" secondItem="lvk-0h-EOJ" secondAttribute="top" id="2C6-2t-zv8"/>
                             <constraint firstItem="U4x-7f-6xd" firstAttribute="leading" secondItem="JqA-Za-ELY" secondAttribute="leading" id="Cjk-hf-7NC"/>
-                            <constraint firstItem="sOu-Ba-7Ke" firstAttribute="bottom" secondItem="U4x-7f-6xd" secondAttribute="bottom" constant="-80" id="c38-Gp-0Lv"/>
+                            <constraint firstItem="sOu-Ba-7Ke" firstAttribute="bottom" secondItem="U4x-7f-6xd" secondAttribute="bottom" constant="-150" id="c38-Gp-0Lv"/>
                             <constraint firstItem="fOG-C7-qvY" firstAttribute="top" secondItem="JqA-Za-ELY" secondAttribute="top" constant="20" id="dmB-Sz-a9J"/>
                             <constraint firstItem="JqA-Za-ELY" firstAttribute="trailing" secondItem="U4x-7f-6xd" secondAttribute="trailing" id="gSb-ER-MbI"/>
                             <constraint firstItem="U4x-7f-6xd" firstAttribute="leading" secondItem="fOG-C7-qvY" secondAttribute="leading" constant="-16" id="icl-CJ-1Rv"/>

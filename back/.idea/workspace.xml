@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68a8c2b4-5abc-41b3-8f4e-0b3d14365b7a" name="Default Changelist" comment="" />
+    <list default="true" id="68a8c2b4-5abc-41b3-8f4e-0b3d14365b7a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Arkatsu /AppDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Arkatsu /AppDelegate.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Arkatsu /Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Arkatsu /Base.lproj/Main.storyboard" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Arkatsu /LoginViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Arkatsu /LoginViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Arkatsu /companies scene/CompaniesSceneViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Arkatsu /companies scene/CompaniesSceneViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Arkatsu /progress scene/ProgressSceneViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Arkatsu /progress scene/ProgressSceneViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Arkatsu /progress scene/views/UserHeaderAggregatedInfo.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Arkatsu /progress scene/views/UserHeaderAggregatedInfo.swift" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1Wo4Q0FBrKojJpRJOWR5HFGAOX2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -62,10 +78,22 @@
       <option name="presentableId" value="Default" />
       <updated>1579802593824</updated>
       <workItem from="1579802597290" duration="478000" />
+      <workItem from="1583863055032" duration="1714000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

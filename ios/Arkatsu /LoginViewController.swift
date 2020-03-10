@@ -23,6 +23,7 @@ class LoginViewController: UIViewController {
       imageView?.image = pandaGif
     }
 
+    loginTextField.textColor = .black
     loginTextField.placeholder = "Your pet name"
     loginTextField.layer.borderColor = UIColor.white.cgColor
     loginTextField.layer.cornerRadius = loginTextField.frame.height * 3 / 7
@@ -38,8 +39,7 @@ class LoginViewController: UIViewController {
 
 
   @IBAction func clickedSignIn(_ sender: Any) {
-//    present(MainTabViewController(), animated: true, completion: {})
-//    self.navigationController?.pushViewController(MainTabViewController(), animated: true)
+    UserDefaults.standard.set(loginTextField.text ?? "Default name", forKey: "Pet name")
 
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     appDelegate.setRootViewController(MainTabViewController())
