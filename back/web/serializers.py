@@ -14,6 +14,7 @@ class CategorySerializer(serializers.ModelSerializer):
         model = Category
         fields = ['title', 'first', 'second', 'third', 'forth', 'first_cost', 'second_cost', 'third_cost', 'forth_cost']
 
+
 class StudentSerializer(serializers.ModelSerializer):
     category_set = CategorySerializer(many=False, read_only=True)
     class Meta:

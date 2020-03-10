@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-
+from django.contrib.postgres.fields import ArrayField
 
 class Category(models.Model):
     title = models.CharField(max_length=25)
@@ -16,7 +16,7 @@ class Category(models.Model):
 
 
 class Student(models.Model):
-    achievments = models.ArrayField(models.CharField(max_length=100))
+    achievments = ArrayField(models.CharField(max_length=100))
     name = models.CharField(max_length=100)
     status = models.CharField(max_length=25)
     level = models.IntegerField()
