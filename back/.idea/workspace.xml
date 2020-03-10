@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c85f0a3e-fd5b-42ae-8b30-186f1f5a7ea5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/hackupc.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackupc/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackupc/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackupc/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackupc/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/migrations/0002_student_age.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/views.py" beforeDir="false" />
-    </list>
+    <list default="true" id="c85f0a3e-fd5b-42ae-8b30-186f1f5a7ea5" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,6 +143,7 @@
       <workItem from="1583863004403" duration="2455000" />
       <workItem from="1583868183655" duration="4000" />
       <workItem from="1583868203013" duration="165000" />
+      <workItem from="1583868790963" duration="7000" />
     </task>
     <servers />
   </component>
