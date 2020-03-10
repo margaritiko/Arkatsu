@@ -16,7 +16,7 @@ class Category(models.Model):
 
 
 class Student(models.Model):
-    achievments = ArrayField(models.CharField(max_length=100))
+    achievments = ArrayField(models.CharField(max_length=100), default=list)
     name = models.CharField(max_length=100)
     status = models.CharField(max_length=25)
     level = models.IntegerField()
