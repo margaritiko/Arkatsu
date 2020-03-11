@@ -16,7 +16,7 @@ class CategorySerializer(serializers.ModelSerializer):
 
 
 class StudentSerializer(serializers.ModelSerializer):
-    category_set = CategorySerializer(many=False, read_only=True)
+    category_set = CategorySerializer(many=True, read_only=True)
     class Meta:
         model = Student
         fields = ['achievments', 'name', 'status', 'level', 'category_set']
