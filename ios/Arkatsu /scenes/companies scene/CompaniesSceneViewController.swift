@@ -162,8 +162,8 @@ extension CompaniesSceneViewController: UICollectionViewDelegateFlowLayout {
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
     
     return CGSize(
-      width: UIScreen.main.bounds.width / 3.5,
-      height: UIScreen.main.bounds.width / 3.5
+      width: UIScreen.main.bounds.width / 4,
+      height: UIScreen.main.bounds.width / 4
     )
   }
 }

@@ -65,7 +65,7 @@ class ProgressSceneViewController: UIViewController {
       for user in users {
         if user.name == UserDefaults.standard.string(forKey: "Pet name") {
           userModel = UserAggregatedInfoModel(
-            logo: defaultUserInfoModel.logo,
+            logo: UIImage(named: "userLogo")!,
             name: user.name,
             age: user.level,
             status: UserStatus.fromString(user.status)
@@ -129,7 +129,7 @@ extension ProgressSceneViewController: UITableViewDataSource {
 }
 
 private let defaultUserInfoModel = UserAggregatedInfoModel(
-  logo: UIImage(named: "userLogo")!,
+  logo: UIImage(named: "defaultUserLogo")!,
   name: "--",
   age: 0,
   status: .Default

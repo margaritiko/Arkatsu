@@ -14,6 +14,7 @@ class LoginViewController: UIViewController {
   @IBOutlet weak var signInButton: UIButton!
   @IBOutlet weak var imageView: UIImageView!
 
+  let networkService: NetworkServiceProtocol = NetworkService(requestSender: RequestSender())
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -39,12 +40,42 @@ class LoginViewController: UIViewController {
 
 
   @IBAction func clickedSignIn(_ sender: Any) {
-    UserDefaults.standard.set(loginTextField.text ?? "Default name", forKey: "Pet name")
+    guard let petName = loginTextField.text, petName != "" else {
+      showEmptyNameAlert()
+      return
+    }
 
-    let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    appDelegate.setRootViewController(MainTabViewController())
+    networkService.loadUser(withName: petName) { [weak self] userData in
+      if let _ = userData {
+        DispatchQueue.main.async {
+          UserDefaults.standard.set(petName, forKey: "Pet name")
+
+          let appDelegate = UIApplication.shared.delegate as! AppDelegate
+          appDelegate.setRootViewController(MainTabViewController())
+        }
+      } else {
+        DispatchQueue.main.async {
+          self?.showIncorrectNameAlert()
+        }
+      }
+    }
   }
 
+  func showIncorrectNameAlert() {
+      let alertController = UIAlertController(title: "Incorrect name", message:
+          "Please clarify your pet's name - pet with given name doesn't exist!", preferredStyle: .alert)
+      alertController.addAction(UIAlertAction(title: "Try again", style: .default))
+
+      self.present(alertController, animated: true, completion: nil)
+  }
+
+  func showEmptyNameAlert() {
+      let alertController = UIAlertController(title: "Empty name", message:
+          "Please clarify your pet's name - it cannot be empty!", preferredStyle: .alert)
+      alertController.addAction(UIAlertAction(title: "Try again", style: .default))
+
+      self.present(alertController, animated: true, completion: nil)
+  }
 
   @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
     loginTextField.resignFirstResponder()
