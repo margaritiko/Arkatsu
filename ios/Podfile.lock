@@ -1,16 +1,20 @@
 PODS:
   - MKRingProgressView (2.2.2)
+  - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
   - MKRingProgressView
+  - SwiftyJSON
 
 SPEC REPOS:
   trunk:
     - MKRingProgressView
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
   MKRingProgressView: b558eff66a648bd77b11f61cfc5603ae96008077
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 3a4715f7871e1f7e9f27367802dfdc948d781056
+PODFILE CHECKSUM: def99a9ae284a14f081d0127329ad373f8bf3ae6
 
 COCOAPODS: 1.8.4

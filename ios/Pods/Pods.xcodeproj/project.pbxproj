@@ -7,60 +7,79 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14CD2C142A04217A4E5042D319BD6964 /* MKRingProgressView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E20C381AAFCC0E9718A553D45BCC25A /* MKRingProgressView-dummy.m */; };
-		53B12BF72C00F0AEB5D53FB08D1B59F2 /* Pods-Arkatsu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 283CFECF5F13F229CE5FADD85794CEAC /* Pods-Arkatsu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62AF218BD9014DB5643ACDDE4E652213 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		81214FFDC6C490680D0565FBD77F4969 /* Pods-Arkatsu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C068F3246F2DB735A424708DC1793D9 /* Pods-Arkatsu-dummy.m */; };
+		146AEDE32EE53C90A7357C875EA882AD /* Pods-Arkatsu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C068F3246F2DB735A424708DC1793D9 /* Pods-Arkatsu-dummy.m */; };
+		14CD2C142A04217A4E5042D319BD6964 /* MKRingProgressView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D79595372B4598093D5D9186B97F13DA /* MKRingProgressView-dummy.m */; };
+		1942F7D3B7722A5637C3FC0BE44B1E6C /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC8108FD2EAAF2A9207F8219DE1018CA /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BBD69CD484965722F0249453659DD53 /* Pods-Arkatsu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 283CFECF5F13F229CE5FADD85794CEAC /* Pods-Arkatsu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BF6FBC0A64BF107C5D64C61F1397770 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A22D3421A4BA1389288C70C91256ACE /* SwiftyJSON-dummy.m */; };
+		464450D037D17ED5EE2322E180A6A9F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		7A1DCC677578820660AE7814F522981B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		7B4CE5C84161E2BFE477F42DFD634382 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E81E147A04E5B034EB2480B4DAE9E16 /* SwiftyJSON.swift */; };
 		A66834820288F352D28E4E7E4E5CD488 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
 		A811D66B6A07AB8F23E7D73534A1A634 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		D1E24E27F1527380B47B4EA90E0A45B7 /* MKGradientGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E426EF31793D68A4DA240F613B01823 /* MKGradientGenerator.swift */; };
-		E5BD6B3AD2F98BCBAE36D4517F15A651 /* MKRingProgressLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FC42F3FDB393BDCEE49DD8984C69B8 /* MKRingProgressLayer.swift */; };
-		ECEE5A8B2327749E46741EE35FE74E29 /* MKRingProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D84D5543AF019AF2C05F20ED59FF0 /* MKRingProgressView.swift */; };
-		F52449380EF7F9A190A1A5C9ECD3A968 /* MKRingProgressView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB94B5553499A33F0EA8F60ECF432BCF /* MKRingProgressView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1E24E27F1527380B47B4EA90E0A45B7 /* MKGradientGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509058A7D8CC948B185D2148860887C0 /* MKGradientGenerator.swift */; };
+		E5BD6B3AD2F98BCBAE36D4517F15A651 /* MKRingProgressLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF0BC9D0B61808726286723EACAF0ED /* MKRingProgressLayer.swift */; };
+		ECEE5A8B2327749E46741EE35FE74E29 /* MKRingProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229389C1C4E8584B81E28EB0B079BA7 /* MKRingProgressView.swift */; };
+		F52449380EF7F9A190A1A5C9ECD3A968 /* MKRingProgressView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A262329BBA9326423C77CBB40F01C71D /* MKRingProgressView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3CA8DD8DE62E3F5B72D6F1F3E42CFE45 /* PBXContainerItemProxy */ = {
+		0C3EC6CBFFBD36C4105CEBB70FEF46D1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 72C70A12E17485B41B7A7C5DA5AA071C;
 			remoteInfo = MKRingProgressView;
 		};
+		42E3CE7C19767DD1A71C71A4CEF855CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D118A6A04828FD3CDA8640CD2B6796D2;
+			remoteInfo = SwiftyJSON;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07DEBDBA52C847AF927CFDE6356D5734 /* MKRingProgressView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MKRingProgressView-Info.plist"; sourceTree = "<group>"; };
 		283CFECF5F13F229CE5FADD85794CEAC /* Pods-Arkatsu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Arkatsu-umbrella.h"; sourceTree = "<group>"; };
-		2E426EF31793D68A4DA240F613B01823 /* MKGradientGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKGradientGenerator.swift; path = MKRingProgressView/MKGradientGenerator.swift; sourceTree = "<group>"; };
 		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		3CD15C81CE18137300E0213C8B54C939 /* Pods-Arkatsu-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Arkatsu-acknowledgements.markdown"; sourceTree = "<group>"; };
 		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		46DCB5A2D4B21A5DE527195149291910 /* Pods-Arkatsu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Arkatsu.modulemap"; sourceTree = "<group>"; };
-		66B9DAD3B8C41F7EEF7F0892832E2EDF /* MKRingProgressView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKRingProgressView-prefix.pch"; sourceTree = "<group>"; };
-		6B8B9838BA1D38EEC6AA865B37C90356 /* MKRingProgressView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MKRingProgressView.modulemap; sourceTree = "<group>"; };
+		509058A7D8CC948B185D2148860887C0 /* MKGradientGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKGradientGenerator.swift; path = MKRingProgressView/MKGradientGenerator.swift; sourceTree = "<group>"; };
+		5430AB80DA4E6E8DC07288791D076EBD /* MKRingProgressView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MKRingProgressView.xcconfig; sourceTree = "<group>"; };
+		5B22235040FBC8804095120A9ED272A0 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
 		6C068F3246F2DB735A424708DC1793D9 /* Pods-Arkatsu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Arkatsu-dummy.m"; sourceTree = "<group>"; };
 		6C3D1FF67BE4497D634F4C0B0CEEEA2D /* Pods-Arkatsu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Arkatsu.debug.xcconfig"; sourceTree = "<group>"; };
-		6E20C381AAFCC0E9718A553D45BCC25A /* MKRingProgressView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MKRingProgressView-dummy.m"; sourceTree = "<group>"; };
 		6E4E2CBC32188EBB2535631DC6ADC93B /* Pods-Arkatsu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Arkatsu-Info.plist"; sourceTree = "<group>"; };
-		845D84D5543AF019AF2C05F20ED59FF0 /* MKRingProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKRingProgressView.swift; path = MKRingProgressView/MKRingProgressView.swift; sourceTree = "<group>"; };
-		90956A6E48448D222A1E9688CF884B37 /* MKRingProgressView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MKRingProgressView-Info.plist"; sourceTree = "<group>"; };
+		7A22D3421A4BA1389288C70C91256ACE /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		7E81E147A04E5B034EB2480B4DAE9E16 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON/SwiftyJSON.swift; sourceTree = "<group>"; };
+		8229389C1C4E8584B81E28EB0B079BA7 /* MKRingProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKRingProgressView.swift; path = MKRingProgressView/MKRingProgressView.swift; sourceTree = "<group>"; };
+		932903B18C2737ADDD071CA69D72CDFC /* MKRingProgressView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MKRingProgressView.modulemap; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		ACDB8841A602C77FFFAA9B7BE88D8000 /* MKRingProgressView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MKRingProgressView.xcconfig; sourceTree = "<group>"; };
+		A262329BBA9326423C77CBB40F01C71D /* MKRingProgressView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKRingProgressView-umbrella.h"; sourceTree = "<group>"; };
+		AB5633805ACE185A44710EACBBE58130 /* MKRingProgressView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKRingProgressView-prefix.pch"; sourceTree = "<group>"; };
+		ADC3A45008F1F5E46812C15E4744442F /* SwiftyJSON-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyJSON-Info.plist"; sourceTree = "<group>"; };
+		AEC4D09EBF2FDD105E610823488C6D59 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		B4A3EBBD9F413A27CA5E1BF54DB48AD6 /* Pods-Arkatsu-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Arkatsu-frameworks.sh"; sourceTree = "<group>"; };
 		B4ADECA94BEFA7AA49B4F9C5E92BF243 /* Pods-Arkatsu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Arkatsu.release.xcconfig"; sourceTree = "<group>"; };
-		B9FC42F3FDB393BDCEE49DD8984C69B8 /* MKRingProgressLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKRingProgressLayer.swift; path = MKRingProgressView/MKRingProgressLayer.swift; sourceTree = "<group>"; };
-		BB94B5553499A33F0EA8F60ECF432BCF /* MKRingProgressView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKRingProgressView-umbrella.h"; sourceTree = "<group>"; };
 		C70C08E7994F4B285D122DE742FD73D7 /* Pods-Arkatsu-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Arkatsu-acknowledgements.plist"; sourceTree = "<group>"; };
+		D79595372B4598093D5D9186B97F13DA /* MKRingProgressView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MKRingProgressView-dummy.m"; sourceTree = "<group>"; };
 		DA753655A9FCBF82C84A9C53CF9EB693 /* Pods_Arkatsu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Arkatsu.framework; path = "Pods-Arkatsu.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFF0BC9D0B61808726286723EACAF0ED /* MKRingProgressLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKRingProgressLayer.swift; path = MKRingProgressView/MKRingProgressLayer.swift; sourceTree = "<group>"; };
 		DFFF396A7283A65507AFF68552B0BAE7 /* MKRingProgressView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MKRingProgressView.framework; path = MKRingProgressView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC8108FD2EAAF2A9207F8219DE1018CA /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		F338AAE90A3377C0F19DBC55C568721F /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3F116AB02497B880BF83022A89C84A61 /* Frameworks */ = {
+		7B67887BC2A9835711628BBFF8CDE98C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62AF218BD9014DB5643ACDDE4E652213 /* Foundation.framework in Frameworks */,
+				7A1DCC677578820660AE7814F522981B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,29 +92,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AD9C5A8DAF4334B670E91B2EC08DBE2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				464450D037D17ED5EE2322E180A6A9F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		11A5FCA388C7E1CA78B8406DCA8AF32B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6B8B9838BA1D38EEC6AA865B37C90356 /* MKRingProgressView.modulemap */,
-				ACDB8841A602C77FFFAA9B7BE88D8000 /* MKRingProgressView.xcconfig */,
-				6E20C381AAFCC0E9718A553D45BCC25A /* MKRingProgressView-dummy.m */,
-				90956A6E48448D222A1E9688CF884B37 /* MKRingProgressView-Info.plist */,
-				66B9DAD3B8C41F7EEF7F0892832E2EDF /* MKRingProgressView-prefix.pch */,
-				BB94B5553499A33F0EA8F60ECF432BCF /* MKRingProgressView-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/MKRingProgressView";
-			sourceTree = "<group>";
-		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		17891D9A160E956BF88B2159CF112F35 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1E5AB3D56B4E6E3FE99BC08EBD872E0 /* MKRingProgressView */,
+				4C40A5F3BE13647BBC59975B576D986F /* SwiftyJSON */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		1F4E3E98992810C02E0408F1A55C0AA8 /* Pods-Arkatsu */ = {
@@ -115,31 +137,36 @@
 			path = "Target Support Files/Pods-Arkatsu";
 			sourceTree = "<group>";
 		};
-		331E29CDD26F0EC545BA0E16A5CEEA7F /* Pods */ = {
+		4C40A5F3BE13647BBC59975B576D986F /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
-				3B333AE309C61CA50CCE2E232DE31487 /* MKRingProgressView */,
+				7E81E147A04E5B034EB2480B4DAE9E16 /* SwiftyJSON.swift */,
+				B41C7ED2313259740DBE1749F5DDCA0A /* Support Files */,
 			);
-			name = Pods;
+			name = SwiftyJSON;
+			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
-		3B333AE309C61CA50CCE2E232DE31487 /* MKRingProgressView */ = {
+		505C2B53B9F8FEA8FAEB2490D27B4601 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2E426EF31793D68A4DA240F613B01823 /* MKGradientGenerator.swift */,
-				B9FC42F3FDB393BDCEE49DD8984C69B8 /* MKRingProgressLayer.swift */,
-				845D84D5543AF019AF2C05F20ED59FF0 /* MKRingProgressView.swift */,
-				11A5FCA388C7E1CA78B8406DCA8AF32B /* Support Files */,
+				932903B18C2737ADDD071CA69D72CDFC /* MKRingProgressView.modulemap */,
+				5430AB80DA4E6E8DC07288791D076EBD /* MKRingProgressView.xcconfig */,
+				D79595372B4598093D5D9186B97F13DA /* MKRingProgressView-dummy.m */,
+				07DEBDBA52C847AF927CFDE6356D5734 /* MKRingProgressView-Info.plist */,
+				AB5633805ACE185A44710EACBBE58130 /* MKRingProgressView-prefix.pch */,
+				A262329BBA9326423C77CBB40F01C71D /* MKRingProgressView-umbrella.h */,
 			);
-			name = MKRingProgressView;
-			path = MKRingProgressView;
+			name = "Support Files";
+			path = "../Target Support Files/MKRingProgressView";
 			sourceTree = "<group>";
 		};
-		53EC724A5BC9A96D6AEDDDFF4695EAD5 /* Products */ = {
+		9B8EBE31F7982CF2B072DC8AFE3DDA91 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				DFFF396A7283A65507AFF68552B0BAE7 /* MKRingProgressView.framework */,
 				DA753655A9FCBF82C84A9C53CF9EB693 /* Pods_Arkatsu.framework */,
+				E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,13 +179,39 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		B1E5AB3D56B4E6E3FE99BC08EBD872E0 /* MKRingProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				509058A7D8CC948B185D2148860887C0 /* MKGradientGenerator.swift */,
+				DFF0BC9D0B61808726286723EACAF0ED /* MKRingProgressLayer.swift */,
+				8229389C1C4E8584B81E28EB0B079BA7 /* MKRingProgressView.swift */,
+				505C2B53B9F8FEA8FAEB2490D27B4601 /* Support Files */,
+			);
+			name = MKRingProgressView;
+			path = MKRingProgressView;
+			sourceTree = "<group>";
+		};
+		B41C7ED2313259740DBE1749F5DDCA0A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4D09EBF2FDD105E610823488C6D59 /* SwiftyJSON.modulemap */,
+				5B22235040FBC8804095120A9ED272A0 /* SwiftyJSON.xcconfig */,
+				7A22D3421A4BA1389288C70C91256ACE /* SwiftyJSON-dummy.m */,
+				ADC3A45008F1F5E46812C15E4744442F /* SwiftyJSON-Info.plist */,
+				F338AAE90A3377C0F19DBC55C568721F /* SwiftyJSON-prefix.pch */,
+				EC8108FD2EAAF2A9207F8219DE1018CA /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				331E29CDD26F0EC545BA0E16A5CEEA7F /* Pods */,
-				53EC724A5BC9A96D6AEDDDFF4695EAD5 /* Products */,
+				17891D9A160E956BF88B2159CF112F35 /* Pods */,
+				9B8EBE31F7982CF2B072DC8AFE3DDA91 /* Products */,
 				A831896E3CF922DC0C6B10110A24D4D3 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -183,11 +236,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9E50360BCEB1EE93CFB6E158A8FAAB56 /* Headers */ = {
+		3D7DD627DB5C5AD636646E57B685AFB2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53B12BF72C00F0AEB5D53FB08D1B59F2 /* Pods-Arkatsu-umbrella.h in Headers */,
+				1942F7D3B7722A5637C3FC0BE44B1E6C /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B06AB2DB037077ABE305E821FB26ED7D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BBD69CD484965722F0249453659DD53 /* Pods-Arkatsu-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,17 +257,18 @@
 /* Begin PBXNativeTarget section */
 		1EF6FA1A0AB3A7C97F3D1CC4FDE10FEC /* Pods-Arkatsu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3BADCFDEB68E77746B17801982E531AC /* Build configuration list for PBXNativeTarget "Pods-Arkatsu" */;
+			buildConfigurationList = D5ECAFE376C4F1E8217EEF00BFCEE72C /* Build configuration list for PBXNativeTarget "Pods-Arkatsu" */;
 			buildPhases = (
-				9E50360BCEB1EE93CFB6E158A8FAAB56 /* Headers */,
-				EC8F0A45D273234873457C4A974D1F6D /* Sources */,
-				3F116AB02497B880BF83022A89C84A61 /* Frameworks */,
-				017AB88D55E4D4BF0A393022DCFE6100 /* Resources */,
+				B06AB2DB037077ABE305E821FB26ED7D /* Headers */,
+				E0E34A813ED74AF8A91DFF8E8B56BA4D /* Sources */,
+				7B67887BC2A9835711628BBFF8CDE98C /* Frameworks */,
+				9BF0ED36F42218C146716893BD083D93 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				35B07FFE110CAFE455B78D899A22C155 /* PBXTargetDependency */,
+				09403B850D26A3498B72A58D968D1840 /* PBXTargetDependency */,
+				6934127C5AD258A0921CE258638579CB /* PBXTargetDependency */,
 			);
 			name = "Pods-Arkatsu";
 			productName = "Pods-Arkatsu";
@@ -231,6 +293,24 @@
 			productReference = DFFF396A7283A65507AFF68552B0BAE7 /* MKRingProgressView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62468BF9C7EDA172E951A24083C3ECA7 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				3D7DD627DB5C5AD636646E57B685AFB2 /* Headers */,
+				1700C451C98D9DCECBEDFC5E351C5A9E /* Sources */,
+				AD9C5A8DAF4334B670E91B2EC08DBE2C /* Frameworks */,
+				D098F7F0080A87A1F472C81FC2F85528 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -249,18 +329,19 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 53EC724A5BC9A96D6AEDDDFF4695EAD5 /* Products */;
+			productRefGroup = 9B8EBE31F7982CF2B072DC8AFE3DDA91 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				72C70A12E17485B41B7A7C5DA5AA071C /* MKRingProgressView */,
 				1EF6FA1A0AB3A7C97F3D1CC4FDE10FEC /* Pods-Arkatsu */,
+				D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		017AB88D55E4D4BF0A393022DCFE6100 /* Resources */ = {
+		9BF0ED36F42218C146716893BD083D93 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -268,6 +349,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B707F6653FF5F036CD2EE283560E3729 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D098F7F0080A87A1F472C81FC2F85528 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -288,26 +376,74 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC8F0A45D273234873457C4A974D1F6D /* Sources */ = {
+		1700C451C98D9DCECBEDFC5E351C5A9E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81214FFDC6C490680D0565FBD77F4969 /* Pods-Arkatsu-dummy.m in Sources */,
+				2BF6FBC0A64BF107C5D64C61F1397770 /* SwiftyJSON-dummy.m in Sources */,
+				7B4CE5C84161E2BFE477F42DFD634382 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0E34A813ED74AF8A91DFF8E8B56BA4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				146AEDE32EE53C90A7357C875EA882AD /* Pods-Arkatsu-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		35B07FFE110CAFE455B78D899A22C155 /* PBXTargetDependency */ = {
+		09403B850D26A3498B72A58D968D1840 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MKRingProgressView;
 			target = 72C70A12E17485B41B7A7C5DA5AA071C /* MKRingProgressView */;
-			targetProxy = 3CA8DD8DE62E3F5B72D6F1F3E42CFE45 /* PBXContainerItemProxy */;
+			targetProxy = 0C3EC6CBFFBD36C4105CEBB70FEF46D1 /* PBXContainerItemProxy */;
+		};
+		6934127C5AD258A0921CE258638579CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */;
+			targetProxy = 42E3CE7C19767DD1A71C71A4CEF855CA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		000828867F3705A2FF440CEA581680DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B22235040FBC8804095120A9ED272A0 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		131356BE54884448CA49C07BEDF4BB2A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -372,9 +508,41 @@
 			};
 			name = Debug;
 		};
+		373FE7DC82CCB01B4546A8C1C8F95F57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B22235040FBC8804095120A9ED272A0 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		A783124F51C237A161BF1636753E71E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ACDB8841A602C77FFFAA9B7BE88D8000 /* MKRingProgressView.xcconfig */;
+			baseConfigurationReference = 5430AB80DA4E6E8DC07288791D076EBD /* MKRingProgressView.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
@@ -406,7 +574,7 @@
 		};
 		C33B4533E488BB6998F001D2CF261A15 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ACDB8841A602C77FFFAA9B7BE88D8000 /* MKRingProgressView.xcconfig */;
+			baseConfigurationReference = 5430AB80DA4E6E8DC07288791D076EBD /* MKRingProgressView.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
@@ -437,42 +605,7 @@
 			};
 			name = Release;
 		};
-		D283AD46D0DAD76EEF3F2E2B347BD848 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C3D1FF67BE4497D634F4C0B0CEEEA2D /* Pods-Arkatsu.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Arkatsu/Pods-Arkatsu-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Arkatsu/Pods-Arkatsu.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E2EECB57AAB550102A170A88FD78727B /* Release */ = {
+		D73C29E4EE2493D1A1171F52F7F8FF6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B4ADECA94BEFA7AA49B4F9C5E92BF243 /* Pods-Arkatsu.release.xcconfig */;
 			buildSettings = {
@@ -507,6 +640,41 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		E5C581E0E8B573661F11DF535F2968CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C3D1FF67BE4497D634F4C0B0CEEEA2D /* Pods-Arkatsu.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Arkatsu/Pods-Arkatsu-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Arkatsu/Pods-Arkatsu.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		F090CD07A80273D5A73C8EA19224ADDB /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -580,20 +748,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3BADCFDEB68E77746B17801982E531AC /* Build configuration list for PBXNativeTarget "Pods-Arkatsu" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D283AD46D0DAD76EEF3F2E2B347BD848 /* Debug */,
-				E2EECB57AAB550102A170A88FD78727B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				131356BE54884448CA49C07BEDF4BB2A /* Debug */,
 				F090CD07A80273D5A73C8EA19224ADDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62468BF9C7EDA172E951A24083C3ECA7 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				373FE7DC82CCB01B4546A8C1C8F95F57 /* Debug */,
+				000828867F3705A2FF440CEA581680DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5ECAFE376C4F1E8217EEF00BFCEE72C /* Build configuration list for PBXNativeTarget "Pods-Arkatsu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5C581E0E8B573661F11DF535F2968CB /* Debug */,
+				D73C29E4EE2493D1A1171F52F7F8FF6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

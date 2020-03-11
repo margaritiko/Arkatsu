@@ -8,4 +8,14 @@
 
 enum UserStatus: String, RawRepresentable {
   case Satisfaction
+  case Happiness
+  case Default
+
+  static func fromString(_ string: String) -> UserStatus {
+    if (string == "Satisfaction") {
+      return .Satisfaction
+    } else {
+      return .Happiness
+    }
+  }
 }

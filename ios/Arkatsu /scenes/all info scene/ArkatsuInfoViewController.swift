@@ -10,11 +10,18 @@ import UIKit
 
 class ArkatsuInfoViewController: UIViewController {
 
+  struct DataSource {
+    let numberOfBonuses: Int
+    let bonuses: [DailyBonusModel]
+  }
+
   let animatedArkatsu: UIImageView
   let activityView: ActivityView
   let collectionView: UICollectionView
   let dailyBonusLabel: UILabel
   let scrollView = UIScrollView(frame: .zero)
+  let networkService = NetworkService(requestSender: RequestSender())
+  var source: DataSource = DataSource(numberOfBonuses: 0, bonuses: [])
 
   init() {
     dailyBonusLabel = UILabel(frame: .zero)
@@ -53,6 +60,7 @@ class ArkatsuInfoViewController: UIViewController {
       image: UIImage(named: "personIcon"),
       selectedImage: UIImage(named: "personIcon")?.withRenderingMode(.alwaysOriginal)
     )
+
     let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
     activityView.addGestureRecognizer(tap)
   }
@@ -107,36 +115,34 @@ class ArkatsuInfoViewController: UIViewController {
       width: view.frame.width - Specs.collectionViewInsets.horizontalSum,
       height: view.frame.height - tabBarHeight - dailyBonusLabel.frame.maxY - Specs.collectionViewInsets.verticalSum
     )
+
+    networkService.loadDailyBonuses() { [weak self] bonuses in
+
+      var models: [DailyBonusModel] = []
+      for i in 0..<bonuses.count {
+        models.append(
+          DailyBonusModel(
+            description: bonuses[i].description,
+            title: bonuses[i].title,
+            category: bonuses[i].title,
+            bonusLogo: logos[i % 3]
+          )
+        )
+      }
+
+      self?.source = DataSource(numberOfBonuses: bonuses.count, bonuses: models)
+
+      DispatchQueue.main.async {
+        self?.collectionView.reloadData()
+      }
+    }
   }
 }
-
-private let fakeModels: [DailyBonusModel] = [
-  DailyBonusModel(
-    description: "This week will be the final of the ICPC programming competition. Become involved in this event!",
-    title: "ICPC",
-    category: "Uni",
-    bonusLogo: UIImage(named: "education_icon_3")!
-  ),
-
-  DailyBonusModel(
-    description: "Jeremy is inviting everyone to play football. We are gathering today at 17:00 at the third field. Jeremy is inviting everyone to play football. We are gathering today at 17:00 at the third field.",
-    title: "Football",
-    category: "Entertainment",
-    bonusLogo: UIImage(named: "education_icon_2")!
-  ),
-
-  DailyBonusModel(
-    description: "Pasha collects a company to play the mafia. We are going to 103 rooms at 10 pm.",
-    title: "Board games",
-    category: "Board games",
-    bonusLogo: UIImage(named: "education_icon_1")!
-  )
-]
 
 extension ArkatsuInfoViewController: UICollectionViewDelegateFlowLayout {
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
     let layout = DailyBonusCollectionViewCell.layoutForModel(
-      fakeModels[indexPath.row],
+      source.bonuses[indexPath.row],
       width: collectionView.frame.width,
       height: collectionView.frame.height * 0.95
     )
@@ -150,13 +156,13 @@ extension ArkatsuInfoViewController: UICollectionViewDelegateFlowLayout {
 
 extension ArkatsuInfoViewController: UICollectionViewDataSource {
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return fakeModels.count
+    return source.numberOfBonuses
   }
 
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: dailyBonusIdentifier, for: indexPath) as! DailyBonusCollectionViewCell
 
-    cell.configure(with: fakeModels[indexPath.row])
+    cell.configure(with: source.bonuses[indexPath.row])
 
     return cell
   }
@@ -177,3 +183,9 @@ private enum Specs {
   static let collectionViewOffset = CGFloat(16)
   static let fontSize = CGFloat(30)
 }
+
+private let logos = [
+  UIImage(named: "education_icon_3")!,
+  UIImage(named: "education_icon_2")!,
+  UIImage(named: "education_icon_1")!
+]

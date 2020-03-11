@@ -42,6 +42,16 @@
 		5CA803712352FBA200A633EF /* GoalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA803662352FBA200A633EF /* GoalModel.swift */; };
 		5CA803732352FBA200A633EF /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA803692352FBA200A633EF /* CategoryView.swift */; };
 		5CA803742352FBA200A633EF /* CompanyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA8036A2352FBA200A633EF /* CompanyView.swift */; };
+		5CCB6DD72418B64700794C8F /* IRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCB6DD62418B64700794C8F /* IRequest.swift */; };
+		5CCB6DD92418B66D00794C8F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCB6DD82418B66D00794C8F /* Request.swift */; };
+		5CCB6DDE2418B6C000794C8F /* IRequestSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCB6DDD2418B6C000794C8F /* IRequestSender.swift */; };
+		5CCB6DE02418B6D200794C8F /* RequestSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCB6DDF2418B6D200794C8F /* RequestSender.swift */; };
+		5CCB6DE32418B6F000794C8F /* IParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCB6DE22418B6F000794C8F /* IParser.swift */; };
+		5CCB6DE52418B70900794C8F /* UserParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCB6DE42418B70900794C8F /* UserParser.swift */; };
+		5CCB6DE72418B74B00794C8F /* DailyBonusParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCB6DE62418B74B00794C8F /* DailyBonusParser.swift */; };
+		5CCB6DE92418B79E00794C8F /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCB6DE82418B79E00794C8F /* RequestFactory.swift */; };
+		5CCB6DEC2418BEB500794C8F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCB6DEB2418BEB500794C8F /* NetworkService.swift */; };
+		5CCB6DEE2418BECC00794C8F /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCB6DED2418BECC00794C8F /* NetworkServiceProtocol.swift */; };
 		5CD6DBBC234DD8D300D39CEB /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6DBBB234DD8D300D39CEB /* MainTabViewController.swift */; };
 		5CD6DBBF234DE04300D39CEB /* ArkatsuInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6DBBE234DE04300D39CEB /* ArkatsuInfoViewController.swift */; };
 		5CD6DBC2234DE38600D39CEB /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6DBC1234DE38600D39CEB /* ActivityView.swift */; };
@@ -101,6 +111,16 @@
 		5CA803692352FBA200A633EF /* CategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		5CA8036A2352FBA200A633EF /* CompanyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyView.swift; sourceTree = "<group>"; };
 		5CC0585723D3306600FF3DD8 /* WorldData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldData.swift; sourceTree = "<group>"; };
+		5CCB6DD62418B64700794C8F /* IRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRequest.swift; sourceTree = "<group>"; };
+		5CCB6DD82418B66D00794C8F /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		5CCB6DDD2418B6C000794C8F /* IRequestSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRequestSender.swift; sourceTree = "<group>"; };
+		5CCB6DDF2418B6D200794C8F /* RequestSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSender.swift; sourceTree = "<group>"; };
+		5CCB6DE22418B6F000794C8F /* IParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IParser.swift; sourceTree = "<group>"; };
+		5CCB6DE42418B70900794C8F /* UserParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserParser.swift; sourceTree = "<group>"; };
+		5CCB6DE62418B74B00794C8F /* DailyBonusParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBonusParser.swift; sourceTree = "<group>"; };
+		5CCB6DE82418B79E00794C8F /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
+		5CCB6DEB2418BEB500794C8F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		5CCB6DED2418BECC00794C8F /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
 		5CD6DBBB234DD8D300D39CEB /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		5CD6DBBE234DE04300D39CEB /* ArkatsuInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArkatsuInfoViewController.swift; sourceTree = "<group>"; };
 		5CD6DBC1234DE38600D39CEB /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
@@ -201,15 +221,11 @@
 			children = (
 				5CF1B3D224105C8E00E0975F /* panda_launch.gif */,
 				5CE4BF85232E938600A5E7B8 /* AppDelegate.swift */,
-				5CA8035E2352FBA200A633EF /* companies scene */,
-				5CA8035423529B0500A633EF /* multipeer ar controller */,
-				5CD6DBBD234DE01300D39CEB /* all info view controller */,
-				5CD6DBBA234DD87D00D39CEB /* tab bar view controller */,
-				5CA041DC234BDD3D009B1DD9 /* main model */,
-				5C167C71234A2B3B00BA26AD /* progress scene */,
+				5CCB6DD42418B5DD00794C8F /* scenes */,
+				5CCB6DD02418B51300794C8F /* network */,
+				5CA041DC234BDD3D009B1DD9 /* main models */,
 				5C38676B232E752300457A58 /* common */,
 				1488324C1EFC3ED00043E0AB /* resources */,
-				5CF1B3CE2410581700E0975F /* LoginViewController.swift */,
 			);
 			path = "Arkatsu ";
 			sourceTree = "<group>";
@@ -297,25 +313,22 @@
 			path = aggregatedInfo;
 			sourceTree = "<group>";
 		};
-		5CA041DC234BDD3D009B1DD9 /* main model */ = {
+		5CA041DC234BDD3D009B1DD9 /* main models */ = {
 			isa = PBXGroup;
 			children = (
 				5CA041DD234BDD64009B1DD9 /* UserStatus.swift */,
 			);
-			path = "main model";
+			path = "main models";
 			sourceTree = "<group>";
 		};
-		5CA8035423529B0500A633EF /* multipeer ar controller */ = {
+		5CA8035423529B0500A633EF /* multipeer ar scene */ = {
 			isa = PBXGroup;
 			children = (
+				5CCB6DD32418B58E00794C8F /* services */,
+				5CCB6DD22418B57800794C8F /* view */,
 				5CA8035523529B8E00A633EF /* ViewController.swift */,
-				5CA8035723529BAA00A633EF /* MultipeerSession.swift */,
-				5CA8035923529BC200A633EF /* RoundedButton.swift */,
-				5CA8035B23529BDB00A633EF /* Utilities.swift */,
-				5CC0585723D3306600FF3DD8 /* WorldData.swift */,
-				5CDE02FD2410778900DD1594 /* SceneConfigurator.swift */,
 			);
-			path = "multipeer ar controller";
+			path = "multipeer ar scene";
 			sourceTree = "<group>";
 		};
 		5CA8035E2352FBA200A633EF /* companies scene */ = {
@@ -357,6 +370,95 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		5CCB6DD02418B51300794C8F /* network */ = {
+			isa = PBXGroup;
+			children = (
+				5CCB6DEA2418BEA700794C8F /* service */,
+				5CCB6DE12418B6E600794C8F /* parsers */,
+				5CCB6DDC2418B6AC00794C8F /* request manager */,
+				5CCB6DD52418B63A00794C8F /* requests */,
+				5CCB6DE82418B79E00794C8F /* RequestFactory.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		5CCB6DD12418B53800794C8F /* login scene */ = {
+			isa = PBXGroup;
+			children = (
+				5CF1B3CE2410581700E0975F /* LoginViewController.swift */,
+			);
+			path = "login scene";
+			sourceTree = "<group>";
+		};
+		5CCB6DD22418B57800794C8F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				5CA8035923529BC200A633EF /* RoundedButton.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		5CCB6DD32418B58E00794C8F /* services */ = {
+			isa = PBXGroup;
+			children = (
+				5CA8035723529BAA00A633EF /* MultipeerSession.swift */,
+				5CA8035B23529BDB00A633EF /* Utilities.swift */,
+				5CDE02FD2410778900DD1594 /* SceneConfigurator.swift */,
+				5CC0585723D3306600FF3DD8 /* WorldData.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		5CCB6DD42418B5DD00794C8F /* scenes */ = {
+			isa = PBXGroup;
+			children = (
+				5CCB6DD12418B53800794C8F /* login scene */,
+				5CD6DBBD234DE01300D39CEB /* all info scene */,
+				5CA8035E2352FBA200A633EF /* companies scene */,
+				5CA8035423529B0500A633EF /* multipeer ar scene */,
+				5C167C71234A2B3B00BA26AD /* progress scene */,
+				5CD6DBBA234DD87D00D39CEB /* tab bar view controller */,
+			);
+			path = scenes;
+			sourceTree = "<group>";
+		};
+		5CCB6DD52418B63A00794C8F /* requests */ = {
+			isa = PBXGroup;
+			children = (
+				5CCB6DD62418B64700794C8F /* IRequest.swift */,
+				5CCB6DD82418B66D00794C8F /* Request.swift */,
+			);
+			path = requests;
+			sourceTree = "<group>";
+		};
+		5CCB6DDC2418B6AC00794C8F /* request manager */ = {
+			isa = PBXGroup;
+			children = (
+				5CCB6DDD2418B6C000794C8F /* IRequestSender.swift */,
+				5CCB6DDF2418B6D200794C8F /* RequestSender.swift */,
+			);
+			path = "request manager";
+			sourceTree = "<group>";
+		};
+		5CCB6DE12418B6E600794C8F /* parsers */ = {
+			isa = PBXGroup;
+			children = (
+				5CCB6DE22418B6F000794C8F /* IParser.swift */,
+				5CCB6DE42418B70900794C8F /* UserParser.swift */,
+				5CCB6DE62418B74B00794C8F /* DailyBonusParser.swift */,
+			);
+			path = parsers;
+			sourceTree = "<group>";
+		};
+		5CCB6DEA2418BEA700794C8F /* service */ = {
+			isa = PBXGroup;
+			children = (
+				5CCB6DEB2418BEB500794C8F /* NetworkService.swift */,
+				5CCB6DED2418BECC00794C8F /* NetworkServiceProtocol.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
 		5CD6DBBA234DD87D00D39CEB /* tab bar view controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -365,14 +467,14 @@
 			path = "tab bar view controller";
 			sourceTree = "<group>";
 		};
-		5CD6DBBD234DE01300D39CEB /* all info view controller */ = {
+		5CD6DBBD234DE01300D39CEB /* all info scene */ = {
 			isa = PBXGroup;
 			children = (
 				5CD6DBC7234F019700D39CEB /* models */,
 				5CD6DBC0234DE37700D39CEB /* views */,
 				5CD6DBBE234DE04300D39CEB /* ArkatsuInfoViewController.swift */,
 			);
-			path = "all info view controller";
+			path = "all info scene";
 			sourceTree = "<group>";
 		};
 		5CD6DBC0234DE37700D39CEB /* views */ = {
@@ -515,10 +617,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Arkatsu/Pods-Arkatsu-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/MKRingProgressView/MKRingProgressView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MKRingProgressView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -532,12 +636,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CCB6DDE2418B6C000794C8F /* IRequestSender.swift in Sources */,
+				5CCB6DE72418B74B00794C8F /* DailyBonusParser.swift in Sources */,
 				5CA803702352FBA200A633EF /* CategoryLabelDelegateDataSourse.swift in Sources */,
 				5CA041D5234BD78F009B1DD9 /* UserHeaderAggregatedInfo.swift in Sources */,
 				5CF1B3CF2410581700E0975F /* LoginViewController.swift in Sources */,
 				5CA041CD234AB884009B1DD9 /* CompanyProgressInfo.swift in Sources */,
 				5CA8035A23529BC200A633EF /* RoundedButton.swift in Sources */,
 				5CA041DB234BD9EA009B1DD9 /* UserAggregatedInfoModel.swift in Sources */,
+				5CCB6DE52418B70900794C8F /* UserParser.swift in Sources */,
 				5CA041D1234ABD6A009B1DD9 /* CompanyLabel.swift in Sources */,
 				5C167C7D234A2D1D00BA26AD /* ProgressSceneViewController.swift in Sources */,
 				5CA041C3234AA0A3009B1DD9 /* UIEdgeInsetsExtension.swift in Sources */,
@@ -545,8 +652,11 @@
 				5C167C7F234A2D9A00BA26AD /* CategoryCardView.swift in Sources */,
 				5CA8035C23529BDB00A633EF /* Utilities.swift in Sources */,
 				5CA8036C2352FBA200A633EF /* CompaniesSceneViewController.swift in Sources */,
+				5CCB6DE92418B79E00794C8F /* RequestFactory.swift in Sources */,
 				5C167C83234A2FEE00BA26AD /* CardProgress.swift in Sources */,
 				5CD6DBC4234E886A00D39CEB /* DailyBonusDescriptionView.swift in Sources */,
+				5CCB6DE02418B6D200794C8F /* RequestSender.swift in Sources */,
+				5CCB6DD72418B64700794C8F /* IRequest.swift in Sources */,
 				5CA803712352FBA200A633EF /* GoalModel.swift in Sources */,
 				5CA8035823529BAA00A633EF /* MultipeerSession.swift in Sources */,
 				5CD6DBBC234DD8D300D39CEB /* MainTabViewController.swift in Sources */,
@@ -556,18 +666,22 @@
 				5CA041DE234BDD64009B1DD9 /* UserStatus.swift in Sources */,
 				5CA041D3234B6D3D009B1DD9 /* StringExtension.swift in Sources */,
 				5CA8035623529B8E00A633EF /* ViewController.swift in Sources */,
+				5CCB6DEC2418BEB500794C8F /* NetworkService.swift in Sources */,
 				5CA803742352FBA200A633EF /* CompanyView.swift in Sources */,
+				5CCB6DE32418B6F000794C8F /* IParser.swift in Sources */,
 				5CA803732352FBA200A633EF /* CategoryView.swift in Sources */,
 				5CA041CF234AB93A009B1DD9 /* CompanyProgressColorScheme.swift in Sources */,
 				5CA041C1234A7AA6009B1DD9 /* UIColorExtension.swift in Sources */,
 				5CF1B3CD24104A6E00E0975F /* UIImageExtensions.swift in Sources */,
 				5CD6DBC6234F012200D39CEB /* DailyBonusCollectionViewCell.swift in Sources */,
+				5CCB6DEE2418BECC00794C8F /* NetworkServiceProtocol.swift in Sources */,
 				5CA8036E2352FBA200A633EF /* CompanyModel.swift in Sources */,
 				5CA803532352825600A633EF /* UITabBarExtension.swift in Sources */,
 				488A9F482338E73100BBD8A5 /* ARViewController.swift in Sources */,
 				5CD6DBC2234DE38600D39CEB /* ActivityView.swift in Sources */,
 				5CA041C7234AAED9009B1DD9 /* CategoryCardViewLayout.swift in Sources */,
 				5CDE02FE2410778900DD1594 /* SceneConfigurator.swift in Sources */,
+				5CCB6DD92418B66D00794C8F /* Request.swift in Sources */,
 				5CE4BF86232E938600A5E7B8 /* AppDelegate.swift in Sources */,
 				5CD6DBCC2351DC2E00D39CEB /* DailyBonusDescriptionLayout.swift in Sources */,
 				5CA8036D2352FBA200A633EF /* CategoryModel.swift in Sources */,

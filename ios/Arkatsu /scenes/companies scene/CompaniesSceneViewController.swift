@@ -15,6 +15,8 @@ class CompaniesSceneViewController: UIViewController {
     let companyListCollectionView: UICollectionView
     let delegateDataSource = CategoryLabelDelegateDataSourse()
 
+    var achievements: [String.SubSequence] = []
+    let networkService = NetworkService(requestSender: RequestSender())
   
     private let companyReuseIdentifier = "CompanyCell"
     private let categoryReuseIdentifier = "CategoryCell"
@@ -50,6 +52,14 @@ class CompaniesSceneViewController: UIViewController {
           image: UIImage(named: "achievements"),
           selectedImage: UIImage(named: "achievements")?.withRenderingMode(.alwaysOriginal)
       )
+
+      networkService.loadUser(
+        withName: UserDefaults.standard.string(forKey: "Pet name")!,
+        completionHandler: { [weak self] userData in
+          if let user = userData {
+            self?.achievements = user.achievments.split(separator: ";")
+          }
+      })
     }
     
     required init?(coder: NSCoder) {
@@ -123,7 +133,7 @@ class CompaniesSceneViewController: UIViewController {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
       let selectedCategory = delegateDataSource.selectedIndex
       
-      return CategoryLabelDelegateDataSourse.fakeCategories[selectedCategory].companiesItems.count
+      return CategoryLabelDelegateDataSourse.staticCategories[selectedCategory].companiesItems.count
     }
     
 
@@ -133,9 +143,17 @@ class CompaniesSceneViewController: UIViewController {
     let selectedCategory = delegateDataSource.selectedIndex
     
     cell.configure(
-      withModel: CategoryLabelDelegateDataSourse.fakeCategories[selectedCategory].companiesItems[indexPath.row]
+      withModel: CategoryLabelDelegateDataSourse.staticCategories[selectedCategory].companiesItems[indexPath.row]
     )
     cell.layoutSubviews()
+
+    let category = CategoryLabelDelegateDataSourse.staticCategories[selectedCategory]
+    for achievement in achievements {
+      if achievement.lowercased() == category.companiesItems[indexPath.row].companyName.lowercased() {
+        cell.markAsActive()
+      }
+    }
+    
     return cell
   }
 }
@@ -149,42 +167,6 @@ extension CompaniesSceneViewController: UICollectionViewDelegateFlowLayout {
     )
   }
 }
-
-
-private let fakeCompanies: [CompanyModel] = [
-  CompanyModel(
-    companyName: "McDonalds",
-    companyLogo: UIImage(named: "burger")!,
-    nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
-    lastAchievements: [],
-    discount: 1,
-    activated: true
-  ),
-  CompanyModel(
-    companyName: "McDonalds",
-    companyLogo: UIImage(named: "burger")!,
-    nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
-    lastAchievements: [],
-    discount: 1,
-    activated: true
-  ),
-  CompanyModel(
-    companyName: "McDonalds",
-    companyLogo: UIImage(named: "burger")!,
-    nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
-    lastAchievements: [],
-    discount: 1,
-    activated: true
-  ),
-  CompanyModel(
-    companyName: "McDonalds",
-    companyLogo: UIImage(named: "burger")!,
-    nextGoal: GoalModel(maxValue: 5, currentValue: 1, goalName: "free burger", goalImage:UIImage(named: "burger")!),
-    lastAchievements: [],
-    discount: 1,
-    activated: true
-  )
-]
 
 
 private enum Specs {

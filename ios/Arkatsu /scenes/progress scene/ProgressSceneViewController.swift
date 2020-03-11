@@ -16,6 +16,7 @@ class ProgressSceneViewController: UIViewController {
 
   let aggregatedInfoView = UserHeaderAggregatedInfo(frame: .zero)
   let tableView = UITableView(frame: .zero)
+  let networkService: NetworkServiceProtocol = NetworkService(requestSender: RequestSender())
 
   init() {
     super.init(nibName: nil, bundle: nil)
@@ -59,7 +60,23 @@ class ProgressSceneViewController: UIViewController {
     )
     tableView.backgroundColor = UIColor.clear
 
-    aggregatedInfoView.configure(withModel: fakeUserInfoModel)
+    networkService.loadUsers() { [aggregatedInfoView] users in
+      var userModel: UserAggregatedInfoModel = defaultUserInfoModel
+      for user in users {
+        if user.name == UserDefaults.standard.string(forKey: "Pet name") {
+          userModel = UserAggregatedInfoModel(
+            logo: defaultUserInfoModel.logo,
+            name: user.name,
+            age: user.level,
+            status: UserStatus.fromString(user.status)
+          )
+        }
+      }
+
+      DispatchQueue.main.async {
+        aggregatedInfoView.configure(withModel: userModel)
+      }
+    }
 
     view.addSubview(tableView)
 
@@ -111,11 +128,11 @@ extension ProgressSceneViewController: UITableViewDataSource {
   }
 }
 
-private let fakeUserInfoModel = UserAggregatedInfoModel(
+private let defaultUserInfoModel = UserAggregatedInfoModel(
   logo: UIImage(named: "userLogo")!,
-  name: "Piki",
-  age: 2,
-  status: .Satisfaction
+  name: "--",
+  age: 0,
+  status: .Default
 )
 
 private let fakeModels: [CategoryCardModel] = [

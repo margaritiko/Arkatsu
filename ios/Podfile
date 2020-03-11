@@ -7,5 +7,6 @@ target 'Arkatsu' do
 
   # Pods for Arkatsu
   pod 'MKRingProgressView'
+  pod 'SwiftyJSON'
 
 end

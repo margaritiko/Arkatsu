@@ -58,6 +58,10 @@ final class CompanyView: UICollectionViewCell {
     
      layoutSubviews()
    }
+
+  func markAsActive() {
+    logoImageView.image = model.companyLogo
+  }
   
   override func layoutSubviews() {
     super.layoutSubviews()

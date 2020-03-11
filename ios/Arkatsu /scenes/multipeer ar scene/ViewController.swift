@@ -210,7 +210,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
     let upAction = SCNAction.move(to: newPosition, duration: TimeInterval(Specs.characterJumpDuration))
     let downAction = SCNAction.move(to: oldPosition, duration: TimeInterval(Specs.characterJumpDuration))
 
-    pet.runAction(upAction) { [weak self] in
+    pet.runAction(upAction) {
       pet.runAction(downAction)
     }
   }
