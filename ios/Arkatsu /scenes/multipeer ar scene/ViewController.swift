@@ -184,8 +184,6 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
     sceneView.session.getCurrentWorldMap { worldMap, error in
       guard let map = worldMap
         else { print("Error: \(error!.localizedDescription)"); return }
-      // TODO
-      //      let worldData = WorldData(map: map, petName: AppDelegate.petName)
       guard let data = try? NSKeyedArchiver.archivedData(withRootObject: map, requiringSecureCoding: true)
         else { fatalError("can't encode map") }
       self.multipeerSession.sendToAllPeers(data)
@@ -198,7 +196,6 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
     }
 
     pet.addAnimation(animation, forKey: "panda_jump")
-
 
     let oldPosition = pet.position
     let newPosition = SCNVector3(
@@ -299,14 +296,6 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
   // MARK: - AR session management
   private func loadRedPandaModel() -> SCNNode {
       let sceneURL = Bundle.main.url(forResource: "redPanda", withExtension: "scn", subdirectory: "Models.scnassets")!
-      let referenceNode = SCNReferenceNode(url: sceneURL)!
-      referenceNode.load()
-
-      return referenceNode
-  }
-
-  private func loadBluePandaModel() -> SCNNode {
-      let sceneURL = Bundle.main.url(forResource: "bluePanda", withExtension: "scn", subdirectory: "Models.scnassets")!
       let referenceNode = SCNReferenceNode(url: sceneURL)!
       referenceNode.load()
 

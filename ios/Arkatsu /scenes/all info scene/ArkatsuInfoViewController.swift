@@ -2,7 +2,7 @@
 //  ArkatsuInfoViewController.swift
 //  Arkatsu
 //
-//  Created by Маргарита Коннова on 13/10/2019.
+//  Created by Margarita Konnova on 13/10/2019.
 //  Copyright © 2019 Apple. All rights reserved.
 //
 
@@ -15,6 +15,7 @@ class ArkatsuInfoViewController: UIViewController {
     let bonuses: [DailyBonusModel]
   }
 
+  let loadingIndicator = UIActivityIndicatorView(frame: .zero)
   let animatedArkatsu: UIImageView
   let activityView: ActivityView
   let collectionView: UICollectionView
@@ -116,6 +117,15 @@ class ArkatsuInfoViewController: UIViewController {
       height: view.frame.height - tabBarHeight - dailyBonusLabel.frame.maxY - Specs.collectionViewInsets.verticalSum
     )
 
+    loadingIndicator.frame = CGRect(
+      x: (collectionView.frame.maxX + collectionView.frame.minX) / 2.0 - Specs.activityIndicatorSize / 2.0,
+      y: (collectionView.frame.maxY + collectionView.frame.minY) / 2.0 - Specs.activityIndicatorSize / 2.0,
+      width: Specs.activityIndicatorSize,
+      height: Specs.activityIndicatorSize
+    )
+    loadingIndicator.startAnimating()
+    view.addSubview(loadingIndicator)
+
     networkService.loadDailyBonuses() { [weak self] bonuses in
 
       var models: [DailyBonusModel] = []
@@ -134,6 +144,27 @@ class ArkatsuInfoViewController: UIViewController {
 
       DispatchQueue.main.async {
         self?.collectionView.reloadData()
+        self?.loadingIndicator.stopAnimating()
+        self?.loadingIndicator.isHidden = true
+      }
+    }
+
+    networkService.loadUsers() { [weak self] users in
+      for user in users {
+        if user.name == UserDefaults.standard.string(forKey: "Pet name") {
+          var progresses: [Int] = []
+          for categoryBridge in user.categories {
+            let progress = categoryBridge.first_cost + categoryBridge.second_cost + categoryBridge.third_cost + categoryBridge.forth_cost
+
+            progresses.append(progress)
+          }
+
+          DispatchQueue.main.async {
+            self?.activityView.configure(progresses: progresses)
+          }
+
+          break
+        }
       }
     }
   }
@@ -173,6 +204,7 @@ let dailyBonusIdentifier = "DailyBonusCell"
 let dailyBonusLabelContent = "Daily Bonus"
 
 private enum Specs {
+  static let activityIndicatorSize = CGFloat(50)
   static let cellRatio = CGFloat(0.7)
   static let imageRatioToParent = CGFloat(0.38)
   static let imageInsets = UIEdgeInsets(top: 60, left: 24, bottom: 8, right: 24)

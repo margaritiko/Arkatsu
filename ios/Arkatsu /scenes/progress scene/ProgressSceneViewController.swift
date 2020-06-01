@@ -2,7 +2,7 @@
 //  ProgressSceneViewController.swift
 //  Arkatsu
 //
-//  Created by Маргарита Коннова on 13/10/2019.
+//  Created by Margarita Konnova on 13/10/2019.
 //  Copyright © 2019 Apple. All rights reserved.
 //
 
@@ -14,9 +14,11 @@ class ProgressSceneViewController: UIViewController {
     return view.frame.width - Specs.tableViewInsets.horizontalSum
   }
 
+  let loadingIndicator = UIActivityIndicatorView(frame: .zero)
   let aggregatedInfoView = UserHeaderAggregatedInfo(frame: .zero)
   let tableView = UITableView(frame: .zero)
   let networkService: NetworkServiceProtocol = NetworkService(requestSender: RequestSender())
+  var categoriesModels = [CategoryCardModel]()
 
   init() {
     super.init(nibName: nil, bundle: nil)
@@ -58,9 +60,19 @@ class ProgressSceneViewController: UIViewController {
       width: cardViewWidth,
       height: view.frame.height - Specs.tableViewInsets.verticalSum - Specs.tableViewInsets.bottom - aggregatedInfoView.frame.height - Specs.bottomOffset
     )
+
+    loadingIndicator.frame = CGRect(
+      x: view.frame.width / 2.0 - Specs.activityIndicatorSize / 2.0,
+      y: view.frame.height / 2.0 - Specs.activityIndicatorSize / 2.0,
+      width: Specs.activityIndicatorSize,
+      height: Specs.activityIndicatorSize
+    )
+    loadingIndicator.startAnimating()
+    view.addSubview(loadingIndicator)
+
     tableView.backgroundColor = UIColor.clear
 
-    networkService.loadUsers() { [aggregatedInfoView] users in
+    networkService.loadUsers() { [aggregatedInfoView, weak self] users in
       var userModel: UserAggregatedInfoModel = defaultUserInfoModel
       for user in users {
         if user.name == UserDefaults.standard.string(forKey: "Pet name") {
@@ -70,11 +82,41 @@ class ProgressSceneViewController: UIViewController {
             age: user.level,
             status: UserStatus.fromString(user.status)
           )
+
+          self?.categoriesModels = []
+          for categoryBridge in user.categories {
+
+            guard let allCategories = self?.categoriesModels else {
+                continue
+            }
+
+            let categoryImage = categoryImages[allCategories.count % categoryImages.count]
+            let categoryColorScheme = colorSchemes[allCategories.count % colorSchemes.count]
+
+            let categoryModel = CategoryCardModel(
+              maxValue: 100,
+              companiesProgressItems: [
+                CompanyProgressInfo(companyName: categoryBridge.first, value: categoryBridge.first_cost),
+                CompanyProgressInfo(companyName: categoryBridge.second, value: categoryBridge.second_cost),
+                CompanyProgressInfo(companyName: categoryBridge.third, value: categoryBridge.third_cost),
+                CompanyProgressInfo(companyName: categoryBridge.forth, value: categoryBridge.forth_cost)
+              ],
+              shouldShowDetails: false,
+              categoryName: categoryBridge.title,
+              companyLogo: categoryImage,
+              colorScheme: categoryColorScheme
+            )
+
+            self?.categoriesModels.append(categoryModel)
+          }
         }
       }
 
       DispatchQueue.main.async {
         aggregatedInfoView.configure(withModel: userModel)
+        self?.tableView.reloadData()
+        self?.loadingIndicator.stopAnimating()
+        self?.loadingIndicator.isHidden = true
       }
     }
 
@@ -92,7 +134,7 @@ class ProgressSceneViewController: UIViewController {
 extension ProgressSceneViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     let layout = CategoryCardViewLayout(
-      model: fakeModels[indexPath.row],
+      model: categoriesModels[indexPath.row],
       parentWidth: cardViewWidth
     )
     return layout.intrinsicHeight
@@ -101,7 +143,7 @@ extension ProgressSceneViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     tableView.deselectRow(at: indexPath, animated: false)
     let cell = tableView.cellForRow(at: indexPath) as! CategoryCardView
-    fakeModels[indexPath.row].shouldShowDetails = !fakeModels[indexPath.row].shouldShowDetails
+    categoriesModels[indexPath.row].shouldShowDetails = !categoriesModels[indexPath.row].shouldShowDetails
     cell.handleTap()
     tableView.reloadData()
   }
@@ -109,18 +151,18 @@ extension ProgressSceneViewController: UITableViewDelegate {
 
 extension ProgressSceneViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    fakeModels.count
+    categoriesModels.count
   }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: cardReuseIdentifier, for: indexPath) as! CategoryCardView
     cell.selectionStyle = .none
     let layout = CategoryCardViewLayout(
-      model: fakeModels[indexPath.row],
+      model: categoriesModels[indexPath.row],
       parentWidth: cardViewWidth
     )
     cell.configure(
-      withModel: fakeModels[indexPath.row],
+      withModel: categoriesModels[indexPath.row],
       layout: layout
     )
     cell.layoutSubviews()
@@ -135,60 +177,25 @@ private let defaultUserInfoModel = UserAggregatedInfoModel(
   status: .Default
 )
 
-private let fakeModels: [CategoryCardModel] = [
 
-  CategoryCardModel(
-    maxValue: 40,
-    companiesProgressItems: [
-      CompanyProgressInfo(companyName: "Control work in Math", value: 12),
-      CompanyProgressInfo(companyName: "Colloquium", value: 14),
-      CompanyProgressInfo(companyName: "Computer Science Homework", value: 8),
-      CompanyProgressInfo(companyName: "History Homework", value: 1)
-    ],
-    shouldShowDetails: false,
-    categoryName: "Education",
-    companyLogo: UIImage(named: "books")!,
-    colorScheme: .withVioletComponent
-  ),
+private let categoryImages: [UIImage] = [
+  UIImage(named: "books")!,
+  UIImage(named: "tennis")!,
+  UIImage(named: "confetti-1")!,
+  UIImage(named: "ICPC")!
+]
 
-  CategoryCardModel(
-    maxValue: 40,
-    companiesProgressItems: [
-      CompanyProgressInfo(companyName: "Football", value: 12),
-      CompanyProgressInfo(companyName: "Tennis", value: 10),
-      CompanyProgressInfo(companyName: "Basketball", value: 8),
-      CompanyProgressInfo(companyName: "Ping pong", value: 3),
-      CompanyProgressInfo(companyName: "Chess", value: 1)
-    ],
-    shouldShowDetails: false,
-    categoryName: "Sport",
-    companyLogo: UIImage(named: "tennis")!,
-    colorScheme: .withRedComponent
-  ),
-  CategoryCardModel(
-    maxValue: 40,
-    companiesProgressItems: [
-      CompanyProgressInfo(companyName: "Board games", value: 20),
-      CompanyProgressInfo(companyName: "University day", value: 18),
-    ],
-    shouldShowDetails: false,
-    categoryName: "Party",
-    companyLogo: UIImage(named: "confetti-1")!,
-    colorScheme: .withGreenComponent
-  ),
-  CategoryCardModel(
-    maxValue: 40,
-    companiesProgressItems: [],
-    shouldShowDetails: false,
-    categoryName: "Volonteer",
-    companyLogo: UIImage(named: "ICPC")!,
-    colorScheme: .`withYellowComponent`
-  ),
+private let colorSchemes: [CardColorScheme] = [
+  .withVioletComponent,
+  .withRedComponent,
+  .withGreenComponent,
+  .withYellowComponent
 ]
 
 private let cardReuseIdentifier = "CardCell"
 
 private enum Specs {
+  static let activityIndicatorSize = CGFloat(50)
   static let userInfoHeightRatio = CGFloat(0.16)
   static let userInfoInsets = UIEdgeInsets(uniform: 32)
   static let tableViewInsets = UIEdgeInsets(top: 8, left: 24, bottom: 8, right: 24)

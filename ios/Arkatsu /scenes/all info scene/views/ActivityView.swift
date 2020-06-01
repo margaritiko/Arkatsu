@@ -2,7 +2,7 @@
 //  ActivityView.swift
 //  Arkatsu
 //
-//  Created by Маргарита Коннова on 13/10/2019.
+//  Created by Margarita Konnova on 13/10/2019.
 //  Copyright © 2019 Apple. All rights reserved.
 //
 
@@ -23,22 +23,22 @@ final class ActivityView: UIView {
     ring1.startColor = UIColor(red:0.00, green:0.83, blue:0.85, alpha:1.0)
     ring1.endColor = UIColor(rgb: 0x5849B8) // UIColor(red:0.00, green:0.83, blue:1.00, alpha:1.0)
     ring1.ringWidth = Specs.ringWidth
-    ring1.progress = 0.8
+    ring1.progress = 0
 
     ring2.startColor = UIColor(red:1.00, green:0.30, blue:0.44, alpha:1.0)
     ring2.endColor = UIColor(red:0.98, green:0.17, blue:0.35, alpha:1.0)
     ring2.ringWidth = Specs.ringWidth
-    ring2.progress = 0.75
+    ring2.progress = 0
 
     ring3.startColor = UIColor(red:0.46, green:0.93, blue:0.00, alpha:1.0)
     ring3.endColor = UIColor(red:0.22, green:0.82, blue:0.17, alpha:1.0)
     ring3.ringWidth = Specs.ringWidth
-    ring3.progress = 1.7
+    ring3.progress = 0
 
     ring4.startColor = UIColor(red:0.99, green:0.89, blue:0.02, alpha:1.0)
     ring4.endColor = UIColor(red:0.99, green:0.89, blue:0.02, alpha:1.0)
     ring4.ringWidth = Specs.ringWidth
-    ring4.progress = 0.3
+    ring4.progress = 0
 
     addSubview(ring1)
     addSubview(ring2)
@@ -48,6 +48,15 @@ final class ActivityView: UIView {
   
   required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
+  }
+
+  func configure(progresses: [Int]) {
+    guard progresses.count > 3 else { return }
+
+    ring1.progress = Double(progresses[0]) / 100.0
+    ring2.progress = Double(progresses[1]) / 100.0
+    ring3.progress = Double(progresses[2]) / 100.0
+    ring4.progress = Double(progresses[3]) / 100.0
   }
 
   override func layoutSubviews() {

@@ -2,7 +2,7 @@
 //  ProgressView.swift
 //  Arkatsu
 //
-//  Created by Маргарита Коннова on 13/10/2019.
+//  Created by Margarita Konnova on 13/10/2019.
 //  Copyright © 2019 Apple. All rights reserved.
 //
 
@@ -97,7 +97,7 @@ final class ProgressView: UIView {
     }
 
     UIView.animate(withDuration: Specs.changingColorsDuration) { [unowned self] in
-      if self.model.shouldShowDetails {
+      if self.model.shouldShowDetails && self.model.wasActivated {
         self.aView.backgroundColor = self.colorScheme.aColor
         self.bView.backgroundColor = self.colorScheme.bColor
         self.cView.backgroundColor = self.colorScheme.cColor

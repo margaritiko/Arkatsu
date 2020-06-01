@@ -2,7 +2,7 @@
 //  CategoryCardModel.swift
 //  Arkatsu
 //
-//  Created by Маргарита Коннова on 13/10/2019.
+//  Created by Margarita Konnova on 13/10/2019.
 //  Copyright © 2019 Apple. All rights reserved.
 //
 
@@ -39,6 +39,16 @@ final class CategoryCardModel: CardProgress {
     self.companyLogo = companyLogo
     self.colorScheme = colorScheme
     
+  }
+
+
+  var wasActivated: Bool {
+    var overallProgress = 0
+    for item in companiesProgressItems {
+      overallProgress += item.value
+    }
+
+    return overallProgress > 0
   }
 
 }

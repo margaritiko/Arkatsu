@@ -2,7 +2,7 @@
 //  WorldData.swift
 //  Arkatsu
 //
-//  Created by Маргарита Коннова on 18.01.2020.
+//  Created by Margarita Konnova on 18.01.2020.
 //  Copyright © 2020 Apple. All rights reserved.
 //
 
@@ -12,17 +12,12 @@ import SceneKit
 import ARKit
 import MultipeerConnectivity
 
-// TODO: realize WorldData
 class WorldData: NSObject, NSCopying, NSSecureCoding {
-  func copy(with zone: NSZone? = nil) -> Any {
-
-  }
+  func copy(with zone: NSZone? = nil) -> Any {}
 
   static var supportsSecureCoding: Bool
 
-  func encode(with coder: NSCoder) {
-
-  }
+  func encode(with coder: NSCoder) {}
 
   required init?(coder: NSCoder) {
     fatalError()

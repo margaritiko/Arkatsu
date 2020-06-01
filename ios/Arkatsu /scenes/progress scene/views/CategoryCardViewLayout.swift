@@ -2,7 +2,7 @@
 //  CategoryCardViewLayout.swift
 //  Arkatsu
 //
-//  Created by Маргарита Коннова on 13/10/2019.
+//  Created by Margarita Konnova on 13/10/2019.
 //  Copyright © 2019 Apple. All rights reserved.
 //
 
@@ -63,7 +63,7 @@ final class CategoryCardViewLayout {
       height: Specs.collectionViewHeight
     )
 
-    if model.shouldShowDetails, model.companiesProgressItems.count > 0 {
+    if model.shouldShowDetails, model.wasActivated, model.companiesProgressItems.count > 0 {
       intrinsicHeight = imageViewFrame.height + Specs.commonInsets.verticalSum + Specs.collectionViewHeight + Specs.commonInsets.bottom + Specs.backViewInsets.verticalSum
     } else {
       intrinsicHeight = imageViewFrame.height + Specs.commonInsets.verticalSum + Specs.commonInsets.bottom + Specs.backViewInsets.verticalSum

@@ -2,7 +2,7 @@
 //  SceneConfigurator.swift
 //  Arkatsu
 //
-//  Created by Маргарита Коннова on 05.03.2020.
+//  Created by Margarita Konnova on 05.03.2020.
 //  Copyright © 2020 Apple. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  CategoryCardView.swift
 //  Arkatsu
 //
-//  Created by Маргарита Коннова on 13/10/2019.
+//  Created by Margarita Konnova on 13/10/2019.
 //  Copyright © 2019 Apple. All rights reserved.
 //
 
@@ -76,7 +76,7 @@ final class CategoryCardView: UITableViewCell {
     companiesCollectionView.showsHorizontalScrollIndicator = false
 
     companiesCollectionView.backgroundColor = UIColor.clear
-    companiesCollectionView.isHidden = !model.shouldShowDetails
+    companiesCollectionView.isHidden = !(model.shouldShowDetails && model.wasActivated)
 
     backView.backgroundColor = model.colorScheme.cardBackgroundColor
 
@@ -121,7 +121,7 @@ final class CategoryCardView: UITableViewCell {
   }
 
   func handleTap() {
-    guard model.companiesProgressItems.count > 0 else {
+    guard model.companiesProgressItems.count > 0, model.wasActivated else {
       return
     }
 
@@ -134,7 +134,7 @@ final class CategoryCardView: UITableViewCell {
       },
       completion: {  [unowned self] success in
         if success {
-          self.companiesCollectionView.isHidden = !self.model.shouldShowDetails
+          self.companiesCollectionView.isHidden = !(self.model.shouldShowDetails && self.model.wasActivated)
         }
       }
     )

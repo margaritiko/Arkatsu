@@ -2,7 +2,7 @@
 //  LoginViewController.swift
 //  Arkatsu
 //
-//  Created by Маргарита Коннова on 28.01.2020.
+//  Created by Margarita Konnova on 28.01.2020.
 //  Copyright © 2020 Apple. All rights reserved.
 //
 
